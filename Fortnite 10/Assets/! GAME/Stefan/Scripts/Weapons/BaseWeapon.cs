@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Threading.Tasks;
+using UnityEngine.VFX;
 
 public abstract class BaseWeapon : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public abstract class BaseWeapon : MonoBehaviour
     [Header("References")]
     public Crosshair crosshair;
     public DamageTextManager damageText;
+    public Transform shootPos;
+    public Transform fpsCam;
     Animator animator;
 
     [Header("Weapon Sway")]
@@ -19,6 +22,9 @@ public abstract class BaseWeapon : MonoBehaviour
     public Vector2 idleSpeed;
     public float idleSwayMultiplier;
 
+    [Header("Upgrades")]
+    public WeaponUpgrade[] possibleUpgrades;
+    int currentUpgrade;
 
     [Header("Weapon Settings")]
     public string weaponName;
@@ -38,16 +44,6 @@ public abstract class BaseWeapon : MonoBehaviour
     [Space(20)]
     public float criticalHitChance;
     public float criticalMultiplier;
-    
-    [Space(20)]
-    public Transform shootPos;
-    public Transform fpsCam;
-
-    [Header("Upgrades")]
-    public WeaponUpgrade[] possibleUpgrades;
-    int currentUpgrade;
-
-    public bool autoFire;
 
     private void Start()
     {
@@ -101,6 +97,10 @@ public abstract class BaseWeapon : MonoBehaviour
                 Reload();
             }
         }
+        if(Input.GetButtonDown("Reload") && currentMagSize != maxMagSize)
+        {
+            Reload();
+        }
     }
 
     public abstract void Reload();
@@ -141,7 +141,7 @@ public abstract class BaseWeapon : MonoBehaviour
         if (nextUpgradeIndex > possibleUpgrades.Length) return false;
 
         //als de speler genoeg currency heeft
-        if (possibleUpgrades[nextUpgradeIndex].cost < currentCurrency) return true;
+        if (possibleUpgrades[nextUpgradeIndex].cost <= currentCurrency) return true;
 
         return false;   
     }
@@ -149,8 +149,13 @@ public abstract class BaseWeapon : MonoBehaviour
     public void OnBuyUpgrade()
     {
         var upgrade = possibleUpgrades[currentUpgrade];
-        damage = upgrade.upDamage;
-        fireRate = upgrade.upFireRate;
+
+        damage += upgrade.upDamage;
+        fireRate += upgrade.upFireRate;
+        reloadTime -= upgrade.reloadTime;
+        maxMagSize += upgrade.maxMagSize;
+
+        upgrade.onBuy.Play();
 
         currentUpgrade++;
     }
@@ -159,11 +164,17 @@ public abstract class BaseWeapon : MonoBehaviour
 [System.Serializable]
 public struct WeaponUpgrade
 {
-    [Header("To Upgrade")]
+    [Header("Upgrade Settings")]
     public int upDamage;
     public float upFireRate;
+    public float reloadTime;
+    public int maxMagSize;
 
     [Header("Upgrade Settings")]
     public int count;
     public int cost;
+
+    [Header("VFX")]
+
+    public VisualEffect onBuy;
 }
