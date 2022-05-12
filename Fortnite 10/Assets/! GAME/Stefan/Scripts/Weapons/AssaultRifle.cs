@@ -37,8 +37,11 @@ public class AssaultRifle : BaseWeapon
                 crosshair.OnHitEnemy();
             }
 
-            impact.transform.position = hit.point;
+            var impact = Instantiate(this.impact, hit.point, Quaternion.identity);
+            impact.transform.LookAt(transform);
+            impact.transform.position += impact.transform.forward * 0.4f;
             impact.Play();
+            Destroy(impact.gameObject,3f);
         }
     }
 
