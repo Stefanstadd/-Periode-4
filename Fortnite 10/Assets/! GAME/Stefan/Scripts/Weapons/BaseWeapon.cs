@@ -6,7 +6,7 @@ using UnityEngine.VFX;
 
 public abstract class BaseWeapon : MonoBehaviour
 {
-    [Header("Initializing")]
+    [Header("Weapon Positioning")]
     public Vector3 localPos;
     public Vector3 localRot;
 
@@ -35,15 +35,25 @@ public abstract class BaseWeapon : MonoBehaviour
     public float fireRate;
     public float reloadTime;
 
+    [Space(20)]
     public int maxMagSize;
     public int currentMagSize;
-    float nextTimeToFire;
+    public int displayFlashAmount;
 
+    [Space(20)]
+    public float nextTimeToFire;
     public bool reloading;
+    public bool canChangeFireRate;
+    public bool autoFire = true;
 
     [Space(20)]
     public float criticalHitChance;
     public float criticalMultiplier;
+
+    public bool Critical
+    {
+        get { return Random.Range(0, 100) < criticalHitChance; }
+    }
 
     private void Start()
     {
@@ -64,13 +74,13 @@ public abstract class BaseWeapon : MonoBehaviour
 
             if (hit.transform.CompareTag("Enemy"))
             {
-                crosshair.Rotate(true);
+                crosshair.Rotate(135f);
                 crosshair.SetColor(Color.red);
                 crosshair.SetTargetSize(crosshair.defaultSize * 1.5f);
             }
             else
             {
-                crosshair.Rotate(false);
+                crosshair.Rotate(0f);
                 crosshair.SetColor(Color.white);
                 crosshair.SetTargetSize(crosshair.defaultSize);
             }
@@ -82,25 +92,24 @@ public abstract class BaseWeapon : MonoBehaviour
     public void CheckInput()
     {
         nextTimeToFire -= Time.deltaTime;
-        if (Input.GetButton("Fire1") && reloading == false)
-        {
-            if(currentMagSize > 0) 
-            {
-                if (nextTimeToFire <= 0)
-                {
-                    nextTimeToFire = 1 / fireRate;
-                    Shoot();
-                }
-            }
-            else
-            {
-                Reload();
-            }
-        }
-        if(Input.GetButtonDown("Reload") && currentMagSize != maxMagSize)
+
+        if ((Input.GetButtonDown("Fire1") && currentMagSize <= 0 ) || (Input.GetButtonDown("Reload") && currentMagSize != maxMagSize && reloading == false))
         {
             Reload();
         }
+
+        if ((autoFire && Input.GetButton("Fire1") && reloading == false) ||
+            (autoFire == false && Input.GetButtonDown("Fire1") && reloading == false))
+            {
+                if(currentMagSize > 0) 
+                {
+                    if (nextTimeToFire <= 0)
+                    {
+                        nextTimeToFire = 1 / fireRate;
+                        Shoot();
+                    }
+                }
+            }
     }
 
     public abstract void Reload();
@@ -108,6 +117,11 @@ public abstract class BaseWeapon : MonoBehaviour
     {
         crosshair.OnShoot();
         currentMagSize--;
+    }
+
+    public void ChangeFireRate()
+    {
+        autoFire = !autoFire;
     }
 
     public void OnSelectWeapon()
@@ -127,11 +141,6 @@ public abstract class BaseWeapon : MonoBehaviour
     {
         var sway = new Vector3(-Mathf.Sin(Time.time * idleSpeed.x), Mathf.Sin(Time.time * idleSpeed.y),0);
         transform.localEulerAngles += sway * idleSwayMultiplier * Time.deltaTime;
-    }
-
-    protected int GetDamage()
-    {
-        return Random.Range(0, 100) < criticalHitChance ? Mathf.RoundToInt(damage * criticalMultiplier) : damage;
     }
 
     public bool CanAffordNextUpgrade(int currentCurrency)

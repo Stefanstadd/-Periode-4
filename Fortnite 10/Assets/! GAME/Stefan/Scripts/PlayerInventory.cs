@@ -7,15 +7,18 @@ public class PlayerInventory : MonoBehaviour
     const int weaponCount = 3; // max 9
     public int selectedWeapon = 1;
 
-    public static int arBullets = 240;
+    public static int arBullets = int.MaxValue;
 
     public Transform WeaponHolder;
+    public HUDManager display;
+    BaseWeapon currentWeapon;
 
     private void Start() => UpdateInventory();
     
 
     void Update()
     {
+        if (currentWeapon != null && currentWeapon.reloading) return;
         int previousWeapon = selectedWeapon;
         CheckInput();
         if(previousWeapon != selectedWeapon)
@@ -26,6 +29,7 @@ public class PlayerInventory : MonoBehaviour
 
     void UpdateInventory()
     {
+        BaseWeapon _selectedWeapon = null;
         int index = 1;
         foreach (Transform w in WeaponHolder)
         {
@@ -37,6 +41,7 @@ public class PlayerInventory : MonoBehaviour
                 if (weapon != null)
                 {
                     weapon.OnSelectWeapon();
+                    _selectedWeapon = weapon;
                 }
             }
             else
@@ -52,6 +57,8 @@ public class PlayerInventory : MonoBehaviour
             }
             index++;
         }
+        currentWeapon = _selectedWeapon;
+        display.SetWeapon(_selectedWeapon);
     }
 
     void CheckInput()

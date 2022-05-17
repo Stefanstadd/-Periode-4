@@ -58,10 +58,9 @@ public class Crosshair : MonoBehaviour
         transform.localEulerAngles = Vector3.MoveTowards(transform.localEulerAngles,targetRotation, maxRotDelta * Time.deltaTime);
     }
 
-    public void Rotate(bool rotate)
+    public void Rotate(float zRot)
     {
-        if (rotate) targetRotation = OnRotate;
-        else targetRotation = defaultRotation;
+        targetRotation.z = zRot;
     }
 
     public void SetColor(Color color)

@@ -4797,7 +4797,7 @@ MonoBehaviour:
       slotIndex: 0
   m_OutputFlowSlot:
   - link: []
-  blendMode: 1
+  blendMode: 0
   useAlphaClipping: 0
   generateMotionVector: 0
   excludeFromTAA: 0
@@ -7242,7 +7242,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"6baf2644ad916b7448186d5e32b747e7","type":3}}'
+      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"e1d201ff901608a4fb3e23d359271860","type":3}}'
     m_Space: 2147483647
   m_Property:
     name: mainTexture
