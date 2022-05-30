@@ -19,7 +19,7 @@ public class DamageTextManager : MonoBehaviour
         text.faceColor = critical ? criticalColor : defaultColor;
         text.transform.localScale = Vector3.zero;
         text.text = damage.ToString();
-        obj.GetComponent<DamageText>().Initialize(critical? criticalLifeTime : defaultLifeTime,PlayerMovement.player.cam, 1f, critical ? criticalSize : defaultSize);
+        obj.GetComponent<DamageText>().Initialize(critical? criticalLifeTime : defaultLifeTime,PlayerMovement.player.camHolder, 1f, critical ? criticalSize : defaultSize);
 
         //Invoke(Destroy(text.gameObject), critical ? criticalLifeTime : defaultLifeTime);
     }

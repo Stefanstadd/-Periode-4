@@ -7,8 +7,8 @@ public class PlayerMovement : MonoBehaviour
     public static PlayerMovement player;
 
     [Header("References")]
-    public Transform cam;
-    public Transform targetCam, rotationCam, weaponHolder;
+    public Transform camHolder;
+    public Transform cam,targetCam, rotationCam, weaponHolder;
 
     [Header("Movement")]
     public float walkSpeed;
@@ -39,24 +39,31 @@ public class PlayerMovement : MonoBehaviour
     public float camSpeed;
     public float camRotSpeed;
 
-    [Header("Other")]
+    [Header("Aiming")]
+    public Transform aimingCamPos;
 
+    Vector3 defaultCamPos, camAimVelocity;
+    public float aimSensMultiplier;
+
+    [Header("Other")]
+    public float defaultFOV;
     public LayerMask groundMask;
 
-    bool aiming { get { return Input.GetButton("Fire2"); } }
-    public float detectRange;
-    bool isGrounded { get { return Physics.Raycast(transform.position, Vector3.down, detectRange,groundMask); } }
+    PlayerInventory inventory;
 
-    bool sprinting { get { return Input.GetButton("Sprint"); } }
-
-
-    Vector3 defaultCamPos, velocity;
+    Vector3 velocity;
 
     Rigidbody rb;
 
     float _speedVel;
     float currentSpeed;
     public float gravity;
+    public float detectRange;
+    public float recoilRot;
+    public bool Aiming { get { return Input.GetButton("Fire2"); } }
+    bool IsGrounded { get { return Physics.Raycast(transform.position, Vector3.down, detectRange,groundMask); } }
+
+    bool Sprinting { get { return Input.GetButton("Sprint") && !Aiming; } }
 
     private void Awake()
     {
@@ -67,15 +74,17 @@ public class PlayerMovement : MonoBehaviour
     }
     void Start()
     {
-        defaultCamPos = cam.position;
+        defaultCamPos = cam.localPosition;
         Cursor.lockState = CursorLockMode.Locked;
         rb = GetComponent<Rigidbody>();
+        defaultFOV = Camera.main.fieldOfView;
+        inventory = GetComponent<PlayerInventory>();
     }
 
     void Update()
     {
         //Movementspeed declaren
-        currentSpeed = Mathf.SmoothDamp(currentSpeed, sprinting ? runSpeed : walkSpeed, ref _speedVel, speedChangeRate * Time.deltaTime);
+        currentSpeed = Mathf.SmoothDamp(currentSpeed, Sprinting ? runSpeed : walkSpeed, ref _speedVel, speedChangeRate * Time.deltaTime);
 
         //Movement
         Vector3 targetMov = new Vector3(Input.GetAxis("Horizontal"),0, Input.GetAxis("Vertical"));
@@ -87,19 +96,23 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(currentSpeed * Time.deltaTime * movement);
 
         //Rotation
-        Vector2 targetRot = new Vector2(Input.GetAxis("Mouse Y") * xSens * Time.deltaTime,Input.GetAxis("Mouse X") * ySens * Time.deltaTime);
+        float aimsens = Aiming ? aimSensMultiplier : 1;
+        Vector2 targetRot = new Vector2(Input.GetAxis("Mouse Y") * xSens * Time.deltaTime * aimsens,Input.GetAxis("Mouse X") * ySens * Time.deltaTime * aimsens);
+
         xRot -= targetRot.x;
         xRot = Mathf.Clamp(xRot, clampAngles.x, clampAngles.y);
+
         rotation = Vector2.SmoothDamp(rotation, targetRot, ref rotVelocity, rotSmoothTime * Time.deltaTime);
 
         targetCam.transform.localEulerAngles = new Vector3(xRot,0,0);
-        weaponHolder.transform.localEulerAngles = new Vector3(xRot, 0, 0);
+        weaponHolder.GetChild(inventory.selectedWeapon -1).transform.localEulerAngles = new Vector3(xRot + recoilRot, 0, 0);
+
         transform.Rotate(new Vector3(0, rotation.y));
 
 
         //Cam Settings
 
-        if (Input.GetButton("Left Ctrl"))
+        if (Input.GetButton("Left Ctrl") && !Aiming)
         {
             var a = rotationCam.transform.forward * mouseScrollSpeed * Time.deltaTime * Input.mouseScrollDelta.y;
             var b = a + targetCam.transform.localPosition;
@@ -107,14 +120,17 @@ public class PlayerMovement : MonoBehaviour
                 targetCam.transform.position += a;
         }
 
-        cam.transform.position = Vector3.SmoothDamp(cam.transform.position,targetCam.transform.position,ref velocity, camSpeed * Time.deltaTime);
-        cam.transform.rotation = Quaternion.Lerp(cam.transform.rotation,targetCam.transform.rotation,camRotSpeed);
-        if (isGrounded)
+        if (Aiming)
         {
-            if (Input.GetButtonDown("Jump"))
-            {
-                rb.AddForce(Vector3.up * jumpSpeed, ForceMode.VelocityChange);
-            }
+            cam.transform.position = Vector3.SmoothDamp(cam.transform.position, aimingCamPos.transform.position, ref camAimVelocity, camSpeed * Time.deltaTime);
         }
+        else
+        {
+            cam.transform.localPosition = Vector3.SmoothDamp(cam.transform.localPosition, Vector3.zero, ref camAimVelocity, camSpeed * Time.deltaTime);
+        }
+
+
+        camHolder.transform.position = Vector3.SmoothDamp(camHolder.transform.position,targetCam.transform.position,ref velocity, camSpeed * Time.deltaTime);
+        cam.transform.rotation = Quaternion.Lerp(cam.transform.rotation,targetCam.transform.rotation,camRotSpeed);
     }
 }

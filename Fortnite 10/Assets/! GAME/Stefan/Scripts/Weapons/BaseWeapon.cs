@@ -13,14 +13,10 @@ public abstract class BaseWeapon : MonoBehaviour
     [Header("References")]
     public Crosshair crosshair;
     public DamageTextManager damageText;
+    public CameraScript camScript;
     public Transform shootPos;
     public Transform fpsCam;
     Animator animator;
-
-    [Header("Weapon Sway")]
-    public float swayMultiplier;
-    public Vector2 idleSpeed;
-    public float idleSwayMultiplier;
 
     [Header("Upgrades")]
     public WeaponUpgrade[] possibleUpgrades;
@@ -43,12 +39,17 @@ public abstract class BaseWeapon : MonoBehaviour
     [Space(20)]
     public float nextTimeToFire;
     public bool reloading;
-    public bool canChangeFireRate;
+    public bool canChangeFireMode;
     public bool autoFire = true;
 
     [Space(20)]
     public float criticalHitChance;
     public float criticalMultiplier;
+
+    [Space(20)]
+    public float aimFOVDecrease;
+
+    public PlayerMovement playerMovement;
 
     public bool Critical
     {
@@ -58,11 +59,11 @@ public abstract class BaseWeapon : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        playerMovement = transform.root.GetComponent<PlayerMovement>();
     }
 
-    private void Update()
+    protected virtual void Update()
     {
-        UpdateWeaponSway();
 
         CheckInput();
 
@@ -72,7 +73,7 @@ public abstract class BaseWeapon : MonoBehaviour
         {
             crosshair.SetCrosshair(hit.point);
 
-            if (hit.transform.CompareTag("Enemy"))
+            if (CanHitTarget(hit))
             {
                 crosshair.Rotate(135f);
                 crosshair.SetColor(Color.red);
@@ -113,13 +114,19 @@ public abstract class BaseWeapon : MonoBehaviour
     }
 
     public abstract void Reload();
+
+    public virtual bool CanHitTarget(RaycastHit hit)
+    {
+        if (hit.collider.transform.root.CompareTag("Enemy")) return true;
+        return false;
+    }
     public virtual void Shoot()
     {
         crosshair.OnShoot();
         currentMagSize--;
     }
 
-    public void ChangeFireRate()
+    public void ChangeFireMode()
     {
         autoFire = !autoFire;
     }
@@ -135,12 +142,6 @@ public abstract class BaseWeapon : MonoBehaviour
     {
         GetComponent<Collider>().enabled = true;
         crosshair.ResetCrosshair();
-    }
-
-    void UpdateWeaponSway()
-    {
-        var sway = new Vector3(-Mathf.Sin(Time.time * idleSpeed.x), Mathf.Sin(Time.time * idleSpeed.y),0);
-        transform.localEulerAngles += sway * idleSwayMultiplier * Time.deltaTime;
     }
 
     public bool CanAffordNextUpgrade(int currentCurrency)

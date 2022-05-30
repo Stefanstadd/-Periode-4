@@ -6,6 +6,11 @@ public class PlayerInventory : MonoBehaviour
 {
     const int weaponCount = 3; // max 9
     public int selectedWeapon = 1;
+    [Header("Healing")]
+    public int healthPotions = int.MaxValue;
+    [Range(2,30)]public float timeBetweenHealing = 15f;
+    [SerializeField]float healTimer;
+    public GameObject VFX_Healing;
 
     public static int arBullets = int.MaxValue;
 
@@ -13,17 +18,35 @@ public class PlayerInventory : MonoBehaviour
     public HUDManager display;
     BaseWeapon currentWeapon;
 
-    private void Start() => UpdateInventory();
+    public GameObject enemy;
+
+    private void Start()
+    {
+        UpdateInventory();
+        //healTimer = timeBetweenHealing;
+    }
     
 
     void Update()
     {
         if (currentWeapon != null && currentWeapon.reloading) return;
+
         int previousWeapon = selectedWeapon;
         CheckInput();
         if(previousWeapon != selectedWeapon)
         {
             UpdateInventory();
+        }
+
+        CheckHealing();
+
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            print("z");
+            for (int i = 0; i < 3; i++)
+            {
+                Instantiate(enemy,transform.position + new Vector3(Random.insideUnitCircle.x,0,Random.insideUnitCircle.y) * 10,Quaternion.identity);
+            }
         }
     }
 
@@ -92,6 +115,41 @@ public class PlayerInventory : MonoBehaviour
                     selectedWeapon--;
             }
         }
+    }
+
+    void CheckHealing()
+    {
+        if(healTimer >= 0)
+        healTimer -= Time.deltaTime;
+
+        if (Input.GetButtonDown("Heal"))
+        {
+            if (healTimer <= 0 && healthPotions > 0)
+            {
+                OnHeal();
+            }
+            else
+            {
+                display.OnHealFailed();
+            }
+        }
+
+        if(healTimer < 0)
+        { 
+
+        }
+    }
+
+    void OnHeal()
+    {
+        healthPotions--;
+        display.OnHeal(timeBetweenHealing);
+        healTimer = timeBetweenHealing;
+
+        Vector3 pos = transform.position - Vector3.up * 0.49f;
+        var a = Instantiate(VFX_Healing, pos, Quaternion.identity).transform;
+        a.transform.localEulerAngles = new Vector3(-90, 0, 0);
+        Destroy(a.gameObject,8f);
     }
         
 }
