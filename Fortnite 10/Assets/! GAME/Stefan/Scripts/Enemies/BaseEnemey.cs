@@ -6,7 +6,6 @@ using UnityEngine.AI;
 
 public enum EnemyState
 {
-    Idle,
     Wandering,
     Fleeing,
     Attacking,
@@ -27,6 +26,7 @@ public class BaseEnemey : MonoBehaviour
     NavMeshAgent agent;
 
     bool canSeePlayer;
+    public float wanderTimer;
 
     protected virtual void Start()
     {
@@ -34,11 +34,20 @@ public class BaseEnemey : MonoBehaviour
         target = PlayerMovement.player.transform;
 
         InitializeEnemy(data);
-        InvokeRepeating("SetEnemyState", 0, 0.1f);
+        InvokeRepeating("UpdateEnemy", 0, 0.1f);
+    }
+    void InitializeEnemy(EnemyData data)
+    {
+        spawnedEnemy = Instantiate(data.prefab, transform.position, Quaternion.identity, transform);
+        agent.speed = data.movementSpeed;
+        agent.angularSpeed = data.rotationSpeed;
+        agent.stoppingDistance = data.attackRadius;
+        currentHp = data.maxHP;
     }
 
     void UpdateEnemy()
     {
+        SetEnemyState();
         if (canSeePlayer)
         {
             if (state == EnemyState.Threatening)
@@ -50,16 +59,24 @@ public class BaseEnemey : MonoBehaviour
                 //do stuff for attacking
             }
         }
+        else
+        {
+            if (state == EnemyState.Wandering)
+            {
+                if (wanderTimer <= 0) 
+                {
+                    wanderTimer = data.WanderTimer;
+                    SetTarget(Random.insideUnitSphere * 30);
+                }
+                else
+                {
+                    wanderTimer -= Time.deltaTime * 10;
+                }
+
+            }
+        }
     }
 
-    void InitializeEnemy(EnemyData data)
-    {
-        spawnedEnemy = Instantiate(data.prefab, transform.position, Quaternion.identity, transform);
-        agent.speed = data.movementSpeed;
-        agent.angularSpeed = data.rotationSpeed;
-        agent.stoppingDistance = data.attackRadius;
-        currentHp = data.maxHP;
-    }
 
     void CheckPlayerVisible()
     {
@@ -90,9 +107,8 @@ public class BaseEnemey : MonoBehaviour
         }
         else
         {
-            state = EnemyState.Idle;
+            state = EnemyState.Wandering;
         }
-        UpdateEnemy();
     }
 
     public bool CanSeePlayer()
@@ -142,10 +158,12 @@ public class BaseEnemey : MonoBehaviour
     public void TakeDamage(float dmg)
     {
         currentHp -= dmg * data.resistance;
+
         if(currentHp <= 0)
         {
             Die();
         }
+        SetTarget(target.position);
     }
     void Die()
     {

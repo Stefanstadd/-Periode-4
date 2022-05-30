@@ -43,7 +43,7 @@ public class PlayerInventory : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             print("z");
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i <10; i++)
             {
                 Instantiate(enemy,transform.position + new Vector3(Random.insideUnitCircle.x,0,Random.insideUnitCircle.y) * 10,Quaternion.identity);
             }

@@ -51,6 +51,10 @@ public abstract class BaseWeapon : MonoBehaviour
 
     public PlayerMovement playerMovement;
 
+    [Header("SFX")]
+    public AudioSource audioSource;
+    public AudioClip weaponSwitch,shoot;
+
     public bool Critical
     {
         get { return Random.Range(0, 100) < criticalHitChance; }
@@ -60,6 +64,15 @@ public abstract class BaseWeapon : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         playerMovement = transform.root.GetComponent<PlayerMovement>();
+    }
+
+    private void OnEnable()
+    {
+        if (weaponSwitch != null)
+        {
+            audioSource.clip = weaponSwitch;
+            audioSource.Play();
+        }
     }
 
     protected virtual void Update()
@@ -124,6 +137,11 @@ public abstract class BaseWeapon : MonoBehaviour
     {
         crosshair.OnShoot();
         currentMagSize--;
+        if(shoot != null)
+        {
+            audioSource.clip = shoot;
+            audioSource.Play();
+        }
     }
 
     public void ChangeFireMode()

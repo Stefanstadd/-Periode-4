@@ -93,7 +93,7 @@ public class HUDManager : MonoBehaviour
 
             if (!IsInvoking("DisableAlreadyReloading"))
             {
-                Invoke("DisableAlreadyRelaoding", 1.5f);
+                Invoke("DisableAlreadyReloading", 1.5f);
             }
         }
 
