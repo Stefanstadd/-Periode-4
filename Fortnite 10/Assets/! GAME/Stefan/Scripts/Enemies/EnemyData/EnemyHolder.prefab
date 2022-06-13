@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6649221966068891464
 Transform:
@@ -43,15 +43,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 6649221966068891462}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0d6139368132b948b633bb570275b24, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e2ab7b4b706af74eacc67eff3de62ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
-  data: {fileID: 11400000, guid: 5c1457f02e154b847936f447e52f2d9f, type: 2}
+  data: {fileID: 0}
   currentHp: 0
-  threadColor: {r: 1, g: 0, b: 0, a: 1}
-  attackColor: {r: 0, g: 1, b: 0.37621593, a: 1}
+  threadColor: {r: 0, g: 0, b: 0, a: 0}
+  attackColor: {r: 0, g: 0, b: 0, a: 0}
   spawnedEnemy: {fileID: 0}
+  bytes: {fileID: 8261045070879550256, guid: 58469e82a7fb1914d95df87e355f27d1, type: 3}
+  wanderTimer: 0
 --- !u!195 &6649221966068891467
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -66,7 +68,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 3
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1

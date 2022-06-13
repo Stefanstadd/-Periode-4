@@ -19,6 +19,7 @@ public class RaycastWeapon : BaseWeapon
 
     protected override void Update()
     {
+        if (inventoryManager.IsInInventory()) return;
         base.Update();
         if (playerMovement.Aiming)
         {
@@ -44,11 +45,11 @@ public class RaycastWeapon : BaseWeapon
 
             float aimingAccuracyMultiplier = playerMovement.Aiming ? recoilAimMultiplier : 1;
 
-            Vector3 accuracy = new Vector3(Random.Range(-recoilAmount, recoilAmount),
+            Vector3 bloom = new Vector3(Random.Range(-recoilAmount, recoilAmount),
                                          Random.Range(-recoilAmount, recoilAmount),
                                          Random.Range(-recoilAmount, recoilAmount)) * recoilMultiplier * aimingAccuracyMultiplier;
 
-            Vector3 shootDirection = shootPos.forward + accuracy;
+            Vector3 shootDirection = shootPos.forward + bloom;
 
             RaycastHit hit;
             if(Physics.Raycast(shootPos.position,shootDirection,out hit, range))
@@ -59,7 +60,7 @@ public class RaycastWeapon : BaseWeapon
 
                 if (hit.transform.CompareTag("Enemy"))
                 {
-                    BaseEnemey enemy = hit.transform.GetComponent<BaseEnemey>();
+                    BaseEnemy enemy = hit.transform.GetComponent<BaseEnemy>();
                     if (damageInfos.Count == 0)
                     {
                         damageInfos.Add(new DamageInfo(enemy, damage, critical, hit.point,hit.transform.position));
@@ -80,8 +81,6 @@ public class RaycastWeapon : BaseWeapon
 
                                 damageInfos[y] = info;
 
-                                print("Zelfde target gevonden");
-
                                 foundSameTarget = true;
                                 break;
                             }
@@ -89,8 +88,6 @@ public class RaycastWeapon : BaseWeapon
                         if (!foundSameTarget)
                         {
                             damageInfos.Add(new DamageInfo(enemy, damage, critical, hit.point, hit.transform.position));
-
-                            print("Nieuwe damageInfo tiegevoegd");
                         }
                     }
                     
@@ -107,8 +104,6 @@ public class RaycastWeapon : BaseWeapon
                 }
             }
         }
-
-        print(damageInfos.Count);
         if (damageInfos.Count != 0)
         {
             crosshair.OnHitEnemy();
@@ -142,8 +137,6 @@ public class RaycastWeapon : BaseWeapon
             currentMagSize += PlayerInventory.arBullets;
             PlayerInventory.arBullets = 0;
         }
-    
-        print(PlayerInventory.arBullets);
         reloading = false;
     }
 
@@ -157,13 +150,13 @@ public class RaycastWeapon : BaseWeapon
 
     public struct DamageInfo
     {
-        public BaseEnemey enemy; //Enemy script refenece
+        public BaseEnemy enemy; //Enemy script refenece
         public float inflictedDamage; // aantal damage genomen
         public bool critical; // heeft deze enemy extra damage genomen?
         public Vector3 hitPoint; // locatie voor damage text
         public Vector3 hitId; // wordt gebruikt om te checken of deze target al gehit is, de transform.position
 
-        public DamageInfo(BaseEnemey _enemy, float _inflictedDamage, bool _critical, Vector3 _hitPoint, Vector3 _hitId)
+        public DamageInfo(BaseEnemy _enemy, float _inflictedDamage, bool _critical, Vector3 _hitPoint, Vector3 _hitId)
         {
             enemy = _enemy;
             inflictedDamage = _inflictedDamage;

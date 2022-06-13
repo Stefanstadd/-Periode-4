@@ -10,6 +10,10 @@ public class Crosshair : MonoBehaviour
     Vector3 posVelocity;
     public float posSmoothTime;
 
+    public float minDistToScale;
+    public float scaleMultiplier;
+    public Vector3 minSize, maxSize;
+
     public Vector3 defaultSize { get; private set; }
     public float value;
 
@@ -32,6 +36,7 @@ public class Crosshair : MonoBehaviour
     public Animator[] animators;
     public Animator onHit;
 
+    Vector3 lastHitPos;
     // Start is called before the first frame update
     void Start()
     {
@@ -53,11 +58,15 @@ public class Crosshair : MonoBehaviour
 
         transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref posVelocity, posSmoothTime * Time.deltaTime);
 
-        transform.localScale = Vector3.MoveTowards(transform.localScale,targetSize,maxSizeDelta * Time.deltaTime);
+        transform.localScale = Vector3.MoveTowards(transform.localScale,targetSize/* + DistanceSize()*/  ,maxSizeDelta * Time.deltaTime);
 
         transform.localEulerAngles = Vector3.MoveTowards(transform.localEulerAngles,targetRotation, maxRotDelta * Time.deltaTime);
     }
 
+    Vector3 DistanceSize()
+    {
+        return Vector3.Lerp(minSize, maxSize, Mathf.Clamp01(Vector3.Distance(PlayerMovement.player.transform.position, lastHitPos) * scaleMultiplier));
+    }
     public void Rotate(float zRot)
     {
         targetRotation.z = zRot;
@@ -67,10 +76,6 @@ public class Crosshair : MonoBehaviour
     {
         targetColor = color;
         _colorLerp = 0;
-    }
-    public void SetTargetSize(Vector3 size)
-    {
-        targetSize = size;
     }
 
     public void OnShoot()
@@ -91,6 +96,7 @@ public class Crosshair : MonoBehaviour
     public void SetCrosshair(Vector3 hitPoint)
     {
         targetPos = Camera.main.WorldToScreenPoint(hitPoint);
+        lastHitPos = hitPoint;
     }
 
     public void ResetCrosshair()

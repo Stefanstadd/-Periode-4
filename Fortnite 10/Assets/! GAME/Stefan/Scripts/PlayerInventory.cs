@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerInventory : MonoBehaviour
 {
-    const int weaponCount = 3; // max 9
+    public const int weaponCount = 2; // max 9
     public int selectedWeapon = 1;
+    public int bytes;
+    public TextMeshProUGUI byteText;
     [Header("Healing")]
     public int healthPotions = int.MaxValue;
     [Range(2,30)]public float timeBetweenHealing = 15f;
@@ -13,6 +16,7 @@ public class PlayerInventory : MonoBehaviour
     public GameObject VFX_Healing;
 
     public static int arBullets = int.MaxValue;
+    public static PlayerInventory playerInventory;
 
     public Transform WeaponHolder;
     public HUDManager display;
@@ -20,8 +24,14 @@ public class PlayerInventory : MonoBehaviour
 
     public GameObject enemy;
 
+    public bool NoWeaponSelected
+    {
+        get { return selectedWeapon == weaponCount + 1; }
+    }
+
     private void Start()
     {
+        playerInventory = this;
         UpdateInventory();
         //healTimer = timeBetweenHealing;
     }
@@ -29,6 +39,8 @@ public class PlayerInventory : MonoBehaviour
 
     void Update()
     {
+        //UpdateBytes();
+
         if (currentWeapon != null && currentWeapon.reloading) return;
 
         int previousWeapon = selectedWeapon;
@@ -39,15 +51,11 @@ public class PlayerInventory : MonoBehaviour
         }
 
         CheckHealing();
+    }
 
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            print("z");
-            for (int i = 0; i <10; i++)
-            {
-                Instantiate(enemy,transform.position + new Vector3(Random.insideUnitCircle.x,0,Random.insideUnitCircle.y) * 10,Quaternion.identity);
-            }
-        }
+    void UpdateBytes()
+    {
+        byteText.text = bytes.ToString();
     }
 
     void UpdateInventory()

@@ -34,11 +34,16 @@ public class HUDManager : MonoBehaviour
     public Animator healAnimator;
     public GameObject failedHealText;
 
+    [Header("Popups")]
+    public SmallPopupUI smallPopup;
+    public BigPopupUI bigPopupUI;
+
     bool reloading;
 
     private void Start()
     {
-        //Update de firerate button
+        smallPopup.gameObject.SetActive(true);
+        bigPopupUI.gameObject.SetActive(true);
     }
     private void Update()
     {

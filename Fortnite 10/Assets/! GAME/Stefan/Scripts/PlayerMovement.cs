@@ -8,7 +8,8 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("References")]
     public Transform camHolder;
-    public Transform cam,targetCam, rotationCam, weaponHolder;
+    public Transform cam, targetCam, rotationCam, weaponHolder;
+    public InventoryManager inventoryManager;
 
     [Header("Movement")]
     public float walkSpeed;
@@ -47,27 +48,28 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Other")]
     public float defaultFOV;
+    public float maxRBSpeed;
     public LayerMask groundMask;
-
-    PlayerInventory inventory;
-
     Vector3 velocity;
 
-    Rigidbody rb;
-
-    float _speedVel;
-    float currentSpeed;
     public float gravity;
     public float detectRange;
     public float recoilRot;
+
+    float _speedVel;
+    float currentSpeed;
+
+    PlayerInventory inventory;
+    Rigidbody rb;
+
     public bool Aiming { get { return Input.GetButton("Fire2"); } }
-    bool IsGrounded { get { return Physics.Raycast(transform.position, Vector3.down, detectRange,groundMask); } }
+    bool IsGrounded { get { return Physics.Raycast(transform.position, Vector3.down, detectRange, groundMask); } }
 
     bool Sprinting { get { return Input.GetButton("Sprint") && !Aiming; } }
 
     private void Awake()
     {
-        if(player == null)
+        if (player == null)
         {
             player = this;
         }
@@ -79,40 +81,60 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         defaultFOV = Camera.main.fieldOfView;
         inventory = GetComponent<PlayerInventory>();
+        currentSpeed = walkSpeed;
     }
 
     void Update()
     {
-        //Movementspeed declaren
-        currentSpeed = Mathf.SmoothDamp(currentSpeed, Sprinting ? runSpeed : walkSpeed, ref _speedVel, speedChangeRate * Time.deltaTime);
+        if(!inventoryManager.IsInInventory()) MouseAndRotation();
 
-        //Movement
-        Vector3 targetMov = new Vector3(Input.GetAxis("Horizontal"),0, Input.GetAxis("Vertical"));
+        CamSettings();
+    }
 
-        movement = Vector3.SmoothDamp(movement,targetMov,ref movVelocity,movSmoothTime * Time.deltaTime);
+    private void FixedUpdate()
+    {
+        if (!IsGrounded)
+        {
+            rb.AddForce(Vector3.down * gravity);
+        }
 
-        if (movement.magnitude > 1) movement.Normalize();
+        currentSpeed = Mathf.SmoothDamp(currentSpeed, Sprinting ? runSpeed : walkSpeed, ref _speedVel, speedChangeRate * Time.fixedDeltaTime);
 
-        transform.Translate(currentSpeed * Time.deltaTime * movement);
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
 
+        Move((transform.forward * v + transform.right * h).normalized * currentSpeed);
+
+        if (OnSlope())
+        {
+            print("a");
+            //rb.AddForce(Vector3.down * 10, ForceMode.Impulse);
+        }
+
+    }
+
+    void MouseAndRotation()
+    { 
         //Rotation
-        float aimsens = Aiming ? aimSensMultiplier : 1;
-        Vector2 targetRot = new Vector2(Input.GetAxis("Mouse Y") * xSens * Time.deltaTime * aimsens,Input.GetAxis("Mouse X") * ySens * Time.deltaTime * aimsens);
+          float aimsens = Aiming ? aimSensMultiplier : 1;
+         Vector2 targetRot = new Vector2(Input.GetAxis("Mouse Y") * xSens * Time.deltaTime * aimsens, Input.GetAxis("Mouse X") * ySens * Time.deltaTime * aimsens);
 
         xRot -= targetRot.x;
-        xRot = Mathf.Clamp(xRot, clampAngles.x, clampAngles.y);
+         xRot = Mathf.Clamp(xRot, clampAngles.x, clampAngles.y);
 
-        rotation = Vector2.SmoothDamp(rotation, targetRot, ref rotVelocity, rotSmoothTime * Time.deltaTime);
+         rotation = Vector2.SmoothDamp(rotation, targetRot, ref rotVelocity, rotSmoothTime * Time.deltaTime);
 
-        targetCam.transform.localEulerAngles = new Vector3(xRot,0,0);
-        weaponHolder.GetChild(inventory.selectedWeapon -1).transform.localEulerAngles = new Vector3(xRot + recoilRot, 0, 0);
+         targetCam.transform.localEulerAngles = new Vector3(xRot, 0, 0);
+
+         if (!inventory.NoWeaponSelected)
+          weaponHolder.GetChild(inventory.selectedWeapon - 1).transform.localEulerAngles = new Vector3(xRot + recoilRot, 0, 0);
 
         transform.Rotate(new Vector3(0, rotation.y));
+    }
 
-
-        //Cam Settings
-
-        if (Input.GetButton("Left Ctrl") && !Aiming)
+    void CamSettings()
+    {
+        if (Input.GetButton("Left Ctrl") && !Aiming && !inventoryManager.IsInInventory())
         {
             var a = rotationCam.transform.forward * mouseScrollSpeed * Time.deltaTime * Input.mouseScrollDelta.y;
             var b = a + targetCam.transform.localPosition;
@@ -120,7 +142,7 @@ public class PlayerMovement : MonoBehaviour
                 targetCam.transform.position += a;
         }
 
-        if (Aiming)
+        if (Aiming && !inventory.NoWeaponSelected && !inventoryManager.IsInInventory())
         {
             cam.transform.position = Vector3.SmoothDamp(cam.transform.position, aimingCamPos.transform.position, ref camAimVelocity, camSpeed * Time.deltaTime);
         }
@@ -130,7 +152,47 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        camHolder.transform.position = Vector3.SmoothDamp(camHolder.transform.position,targetCam.transform.position,ref velocity, camSpeed * Time.deltaTime);
-        cam.transform.rotation = Quaternion.Lerp(cam.transform.rotation,targetCam.transform.rotation,camRotSpeed);
+        camHolder.transform.position = Vector3.SmoothDamp(camHolder.transform.position, targetCam.transform.position, ref velocity, camSpeed * Time.deltaTime);
+        cam.transform.rotation = Quaternion.Lerp(cam.transform.rotation, targetCam.transform.rotation, camRotSpeed);
     }
+
+    private void Move(Vector3 speed)
+    {
+        float flatMagnitude = new Vector3(rb.velocity.x, 0, rb.velocity.z).magnitude;
+
+        if (flatMagnitude < maxRBSpeed)
+            rb.AddForce(speed, ForceMode.Impulse);
+
+    }
+
+    bool OnSlope()
+    {
+        if (IsGrounded)
+        {
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, Vector3.down,out hit))
+            {
+                if (hit.normal != Vector3.up)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    //void Movement()
+    //{
+    //    //Movementspeed declaren
+    //    
+
+    //    //Movement
+    //    Vector3 targetMov = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+
+    //    movement = Vector3.SmoothDamp(movement, targetMov, ref movVelocity, movSmoothTime * Time.deltaTime);
+
+    //    if (movement.magnitude > 1) movement.Normalize();
+
+    //    rb.AddForce(currentSpeed * movement, ForceMode.);
+    //}
 }

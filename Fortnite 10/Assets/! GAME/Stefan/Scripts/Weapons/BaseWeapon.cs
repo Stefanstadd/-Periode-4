@@ -16,11 +16,12 @@ public abstract class BaseWeapon : MonoBehaviour
     public CameraScript camScript;
     public Transform shootPos;
     public Transform fpsCam;
+    public InventoryManager inventoryManager;
     Animator animator;
 
     [Header("Upgrades")]
     public WeaponUpgrade[] possibleUpgrades;
-    int currentUpgrade;
+    public int currentUpgrade;
 
     [Header("Weapon Settings")]
     public string weaponName;
@@ -64,6 +65,7 @@ public abstract class BaseWeapon : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         playerMovement = transform.root.GetComponent<PlayerMovement>();
+        currentMagSize = maxMagSize;
     }
 
     private void OnEnable()
@@ -77,12 +79,12 @@ public abstract class BaseWeapon : MonoBehaviour
 
     protected virtual void Update()
     {
-
+        if (inventoryManager.IsInInventory()) return;
         CheckInput();
 
         //Raycasting
         RaycastHit hit;
-        if(Physics.Raycast(transform.position,shootPos.forward,out hit))
+        if(Physics.Raycast(shootPos.position,shootPos.forward,out hit))
         {
             crosshair.SetCrosshair(hit.point);
 
@@ -90,13 +92,11 @@ public abstract class BaseWeapon : MonoBehaviour
             {
                 crosshair.Rotate(135f);
                 crosshair.SetColor(Color.red);
-                crosshair.SetTargetSize(crosshair.defaultSize * 1.5f);
             }
             else
             {
                 crosshair.Rotate(0f);
                 crosshair.SetColor(Color.white);
-                crosshair.SetTargetSize(crosshair.defaultSize);
             }
         }
 
@@ -164,9 +164,9 @@ public abstract class BaseWeapon : MonoBehaviour
 
     public bool CanAffordNextUpgrade(int currentCurrency)
     {
-        int nextUpgradeIndex = currentUpgrade + 1;
+        int nextUpgradeIndex = currentUpgrade;
         //Als de speler de hoogste upgrade al heeft
-        if (nextUpgradeIndex > possibleUpgrades.Length) return false;
+        if (nextUpgradeIndex >= possibleUpgrades.Length) return false;
 
         //als de speler genoeg currency heeft
         if (possibleUpgrades[nextUpgradeIndex].cost <= currentCurrency) return true;
@@ -174,15 +174,23 @@ public abstract class BaseWeapon : MonoBehaviour
         return false;   
     }
 
+    public int NextUpgradeCost()
+    {
+        int index = currentUpgrade;
+        if (index > possibleUpgrades.Length) return 0;
+        return possibleUpgrades[index].cost;
+    }
+
     public void OnBuyUpgrade()
     {
         var upgrade = possibleUpgrades[currentUpgrade];
 
         damage += upgrade.upDamage;
-        fireRate += upgrade.upFireRate;
+        fireRate += upgrade.increaseFireRate;
         reloadTime -= upgrade.reloadTime;
         maxMagSize += upgrade.maxMagSize;
 
+        if(upgrade.onBuy != null)
         upgrade.onBuy.Play();
 
         currentUpgrade++;
@@ -194,7 +202,7 @@ public struct WeaponUpgrade
 {
     [Header("Upgrade Settings")]
     public int upDamage;
-    public float upFireRate;
+    public float increaseFireRate;
     public float reloadTime;
     public int maxMagSize;
 

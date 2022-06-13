@@ -15,10 +15,11 @@ public class EnemyData : ScriptableObject
 
     public float movementSpeed;
     public float rotationSpeed;
+    public float attackSpeed;
 
     public Vector2 wanderTime;
 
     public float WanderTimer { get { return Random.Range(wanderTime.x, wanderTime.y); } }
 
-    public Vector2 dataDrops;
+    public Vector2Int byteDrops;
 }
