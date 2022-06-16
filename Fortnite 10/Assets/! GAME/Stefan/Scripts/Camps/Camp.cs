@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class Camp : MonoBehaviour
 {
     public const float waveDelay = 12;
 
     public CampsManager manager;
+    public InvasionProgress progress;
     public BigPopupUI bigPopup;
     public SmallPopupUI smallPopup;
     public Wave[] waves;
@@ -19,6 +21,7 @@ public class Camp : MonoBehaviour
     public float minStartDistance = 20;
     public float sphereRadius = 5;
 
+    public VisualEffect campFire;
 
     Transform player;
 
@@ -53,9 +56,12 @@ public class Camp : MonoBehaviour
         bigPopup.Popup(mainText,secondaryText);
         await Task.Delay(Milliseconds(bigPopup.actionTime + bigPopup.strengthWaitTime + 1));
 
+        progress.AssignCamp(this);
+
         //While invasion is happening
         for (int i = 0; i < waves.Length; i++)
         {
+            progress.SwitchProgressMode(ProgressMode.WaveProgression);
             //begin of wave
             Wave currentWave = waves[i];
             this.currentWave = i + 1;
@@ -88,16 +94,17 @@ public class Camp : MonoBehaviour
             {
                 await Task.Yield(); 
             }
-
             //End of a wave
 
             string text = $"Wave { this.currentWave} / {waves.Length} completed!";
-            float waitTime = 1;
 
-            if(this.currentWave <= waves.Length) 
+            float waitTime = smallPopup.strengthWaitTime + smallPopup.popupTime;
+
+            if (this.currentWave <= waves.Length) 
             {
                 smallPopup.Popup(text);
-                waitTime += smallPopup.strengthWaitTime + smallPopup.popupTime;
+                progress.SwitchProgressMode(ProgressMode.TimeBetweenWaves);
+                progress.SetTimer(waitTime + Camp.waveDelay);
             }
 
             await Task.Delay(Milliseconds(waitTime));
@@ -128,6 +135,9 @@ public class Camp : MonoBehaviour
         string mainText = $"Finished invading camp {manager.campsCompleted}!";
         string secondaryText = $"{manager.CampsToGo} camps to go";
         bigPopup.Popup(mainText, secondaryText);
+
+        progress.AssignCamp(null);
+        campFire.Stop();
     }
 
     public int Milliseconds(float value)
@@ -234,5 +244,19 @@ public struct WaveMultiplier
         this.dataDrops = dataDrops;
     }
 
-    public static WaveMultiplier Standard { get { return new WaveMultiplier(1, 1, 1, 1, 1, 1); } }
+    /// <summary>
+    /// Creates a group of multipliers used in waves to make enemies stronger or weaker
+    /// </summary>
+    /// <param name="baseMultiplier"> All multipliers are baseMultiplier</param>
+    public WaveMultiplier(float baseMultiplier)
+    {
+        damage = baseMultiplier;
+        hp = baseMultiplier;
+        resistance = baseMultiplier;
+        movementSpeed = baseMultiplier;
+        rotationSpeed = baseMultiplier;
+        dataDrops = baseMultiplier;
+    }
+
+    public static WaveMultiplier Standard { get { return new WaveMultiplier(1); } }
 }

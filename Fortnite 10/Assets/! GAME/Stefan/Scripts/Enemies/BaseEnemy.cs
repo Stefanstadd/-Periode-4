@@ -32,14 +32,16 @@ public class BaseEnemy : MonoBehaviour
 
     bool canSeePlayer;
     public float wanderTimer;
-    bool attacked;
+    bool attacking;
 
+    float dataMultiplier = 1;
     protected virtual void Start()
     {
         target = PlayerMovement.player.transform;
         InvokeRepeating("UpdateEnemy", 0, 0.1f);
         
         agent = GetComponent<NavMeshAgent>();
+        animator = spawnedEnemy.GetComponent<Animator>();   
     }
     public void InitializeEnemy(EnemyData data,Wave wave)
     {
@@ -62,6 +64,7 @@ public class BaseEnemy : MonoBehaviour
         agent.angularSpeed = data.rotationSpeed * multiplier.rotationSpeed;
         agent.stoppingDistance = data.attackRadius;
         currentHp = data.maxHP * multiplier.hp;
+        dataMultiplier = multiplier.dataDrops;
 
         this.wave = wave;
     }
@@ -77,7 +80,7 @@ public class BaseEnemy : MonoBehaviour
             {
                 SetTarget(target.position);
             }
-            if(state == EnemyState.Attacking)
+            if(state == EnemyState.Attacking && !attacking)
             {
                 Attack();
             }
@@ -102,14 +105,16 @@ public class BaseEnemy : MonoBehaviour
 
     async void Attack()
     {
-        attacked = true;
+        print("Attack");
+        attacking = true;
+        SetTarget(transform.position);
         if (animator)
         {
-            animator.SetBool("Attacking", true);
+            animator.SetTrigger("Attacking");
         }
 
         await Task.Delay((int)(data.attackSpeed * 1000));
-        attacked = false;
+        attacking = false;
     }
 
 
@@ -129,7 +134,7 @@ public class BaseEnemy : MonoBehaviour
 
     void SetEnemyState()
     {
-        if (attacked) return;
+        if (attacking) return;
 
         CheckPlayerVisible();
         float dst = Vector3.Distance(transform.position, target.position);
@@ -139,7 +144,9 @@ public class BaseEnemy : MonoBehaviour
             if(wave != null || dst < data.attackRadius)
             {
                 SetTarget(target.position);
-                state = EnemyState.Attacking;
+
+                if(dst<= data.attackRadius)
+                    state = EnemyState.Attacking;
             }
         }
         else
@@ -206,7 +213,7 @@ public class BaseEnemy : MonoBehaviour
     {
         if (wave != null) wave.killed++;
         var bytes = Instantiate(this.bytes, transform.position, Quaternion.identity);
-        bytes.GetComponentInChildren<Byte>().amount = Random.Range(data.byteDrops.x,data.byteDrops.y);
+        bytes.GetComponentInChildren<Byte>().amount = Mathf.RoundToInt(Random.Range(data.byteDrops.x,data.byteDrops.y) * dataMultiplier);
         Destroy(gameObject);
     }
 

@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class HUDManager : MonoBehaviour
 {
+    public static HUDManager HUD;
+
     public BaseWeapon currentWeapon;
     [Header("Bullets Display")]
     public TextMeshProUGUI currentMag,totalBullets;
@@ -38,8 +40,15 @@ public class HUDManager : MonoBehaviour
     public SmallPopupUI smallPopup;
     public BigPopupUI bigPopupUI;
 
+    [Header("Other")]
+    public InvasionProgress invasionProgress;
+
     bool reloading;
 
+    private void Awake()
+    {
+        if (HUD == null) HUD = this;
+    }
     private void Start()
     {
         smallPopup.gameObject.SetActive(true);
