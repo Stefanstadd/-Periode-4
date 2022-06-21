@@ -138,6 +138,8 @@ public class Camp : MonoBehaviour
 
         progress.AssignCamp(null);
         campFire.Stop();
+        campFire.GetComponentInChildren<LightFlickering>().max = 0;
+        campFire.GetComponentInChildren<LightFlickering>().min = 0;
     }
 
     public int Milliseconds(float value)

@@ -86,6 +86,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (GameMenuManager.Paused) return;
+
         if(!inventoryManager.IsInInventory()) MouseAndRotation();
 
         CamSettings();
@@ -107,7 +109,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (OnSlope())
         {
-            print("a");
             //rb.AddForce(Vector3.down * 10, ForceMode.Impulse);
         }
 

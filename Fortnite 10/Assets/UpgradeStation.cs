@@ -9,9 +9,13 @@ public class UpgradeStation : MonoBehaviour
     public PlayerMovement target;
     public float interactDst;
 
+    Animator animator;
+
+    const string toggleAnimation = "Toggle";
     private void Start()
     {
         target = PlayerMovement.player;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -22,6 +26,7 @@ public class UpgradeStation : MonoBehaviour
         {
             description.Enable(transform.position);
             Description.onInteract = delegate{ inventoryManager.Toggle("Upgrade", true); };
+            animator.SetBool(toggleAnimation,true);
         }
         else if(dst > interactDst && inventoryManager.inventorys[index].Enabled())
         {
@@ -29,6 +34,10 @@ public class UpgradeStation : MonoBehaviour
         }
         else
         {
+            if (dst > interactDst && !inventoryManager.inventorys[index].Enabled())
+            {
+                animator.SetBool(toggleAnimation, false);
+            }
             description.Disable();
         }
     }

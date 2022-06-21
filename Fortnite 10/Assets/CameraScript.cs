@@ -22,6 +22,8 @@ public class CameraScript : MonoBehaviour
     }
     void Update()
     {
+        if (GameMenuManager.Paused) return;
+
         targetRecoil = Mathf.SmoothDamp(targetRecoil, 0, ref recoilVelocity, recoilSmoothTime * Time.deltaTime);
         cam.fieldOfView = Mathf.SmoothDamp(cam.fieldOfView, targetFOV, ref fovVelocity, fovSmoothTime * Time.deltaTime);
         player.recoilRot = targetRecoil;

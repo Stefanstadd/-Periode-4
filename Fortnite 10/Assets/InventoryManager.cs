@@ -11,7 +11,7 @@ public class InventoryManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Tab) || (IsInInventory() && Input.GetButtonDown("Escape")))
         {
             Toggle(" ", false);
         }

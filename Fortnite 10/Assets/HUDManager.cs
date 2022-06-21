@@ -18,6 +18,10 @@ public class HUDManager : MonoBehaviour
     [Header("Weapon Display")]
     public Animator weaponAnimator;
 
+    [Header("Inventory")]
+    public Animator inventoryAnimator;
+    public UIButton inventoryButton;
+
     [Header("Reload Button")]
     public Animator reloadButtonAnimator;
     public UIButton reloadButton;
@@ -42,6 +46,8 @@ public class HUDManager : MonoBehaviour
 
     [Header("Other")]
     public InvasionProgress invasionProgress;
+    public GameMenuManager gameMenu;
+    public InventoryManager inventoryManager;
 
     bool reloading;
 
@@ -56,12 +62,14 @@ public class HUDManager : MonoBehaviour
     }
     private void Update()
     {
+        if(gameMenu)gameMenu.UpdateMenu();
         if (currentWeapon)
         {
             //Bullets Display
             SetBulletsDisplay();
             CheckReloading();
             CheckFireMode();
+            CheckInventory();
         }
 
         if (currentWeapon)
@@ -71,6 +79,11 @@ public class HUDManager : MonoBehaviour
             currentWeapon.autoFire ? autoFireScale : singleFireScale,
             moveDelta * Time.deltaTime);
         }
+    }
+
+    void CheckInventory()
+    {
+        inventoryButton.OnUseButton();
     }
 
     void SetBulletsDisplay()
