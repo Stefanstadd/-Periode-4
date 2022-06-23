@@ -21,6 +21,7 @@ public class InventoryUI : MonoBehaviour
         CreateButtons();
     }
 
+
     void CreateButtons()
     {
         uIButtons = new InventoryUIButton[weapons.Length];
@@ -33,6 +34,28 @@ public class InventoryUI : MonoBehaviour
             if (uIButtons[i])
             {
                 uIButtons[i].Init(weapons[i]);
+            }
+        }
+    }
+
+    private void Update()
+    {
+        UpdateButtons();
+    }
+
+    void UpdateButtons()
+    {
+        InventoryUIButton hoveredButton = null;
+        float closestDst = float.MaxValue;
+
+        var mousePos = Input.mousePosition;
+        for (int i = 0; i < uIButtons.Length; i++)
+        {
+            float dst = Vector3.Distance(uIButtons[i].transform.position, mousePos);
+            if(dst< closestDst)
+            {
+                hoveredButton = uIButtons[i];
+                closestDst = dst;
             }
         }
     }

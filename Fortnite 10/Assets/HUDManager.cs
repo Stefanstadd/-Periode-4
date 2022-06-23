@@ -66,6 +66,11 @@ public class HUDManager : MonoBehaviour
     {
         smallPopup.gameObject.SetActive(true);
         bigPopupUI.gameObject.SetActive(true);
+
+        foreach (Transform transform in transform)
+        {
+            transform.gameObject.SetActive(true);
+        }
     }
     private void Update()
     {

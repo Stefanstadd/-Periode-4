@@ -36,7 +36,8 @@ public class GameMenuManager : MonoBehaviour
 
         gameObject.SetActive(active);
 
-        Cursor.lockState = active ? CursorLockMode.Confined : CursorLockMode.Locked;
+        Cursor.lockState = active ? CursorLockMode.None : CursorLockMode.Locked;
+        Cursor.visible = active;
 
         Time.timeScale = active ? 0 : 1;
     }

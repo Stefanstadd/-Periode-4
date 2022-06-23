@@ -13,6 +13,11 @@ public class InventoryManager : MonoBehaviour
 
     public GameObject baseHud;
 
+
+    private void Start()
+    {
+        ToggleOff();
+    }
     private void Update()
     {
         CheckInventory();
