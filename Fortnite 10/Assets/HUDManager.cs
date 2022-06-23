@@ -21,6 +21,13 @@ public class HUDManager : MonoBehaviour
     [Header("Inventory")]
     public Animator inventoryAnimator;
     public UIButton inventoryButton;
+    public bool InInventory
+    {
+        get
+        {
+            return inventoryManager.IsInInventory();
+        }
+    }
 
     [Header("Reload Button")]
     public Animator reloadButtonAnimator;
@@ -69,7 +76,6 @@ public class HUDManager : MonoBehaviour
             SetBulletsDisplay();
             CheckReloading();
             CheckFireMode();
-            CheckInventory();
         }
 
         if (currentWeapon)
@@ -79,11 +85,6 @@ public class HUDManager : MonoBehaviour
             currentWeapon.autoFire ? autoFireScale : singleFireScale,
             moveDelta * Time.deltaTime);
         }
-    }
-
-    void CheckInventory()
-    {
-        inventoryButton.OnUseButton();
     }
 
     void SetBulletsDisplay()
@@ -165,7 +166,7 @@ public class HUDManager : MonoBehaviour
                 failedHealText.SetActive(false);
 
                 if(!IsInvoking("DisableText"))
-                Invoke("DisableText", 1.5f);
+                    Invoke("DisableText", 1.5f);
 
             }
 

@@ -20,21 +20,20 @@ public class UpgradeStation : MonoBehaviour
 
     void Update()
     {
-        int index = inventoryManager.GetIndexOfInventory("Upgrade");
         float dst = Vector3.Distance(target.transform.position, transform.position);
-        if (dst < interactDst && !inventoryManager.inventorys[index].Enabled())
+        if (dst < interactDst && !inventoryManager.IsInInventory("Upgrade"))
         {
             description.Enable(transform.position);
             Description.onInteract = delegate{ inventoryManager.Toggle("Upgrade", true); };
             animator.SetBool(toggleAnimation,true);
         }
-        else if(dst > interactDst && inventoryManager.inventorys[index].Enabled())
+        else if(dst > interactDst && inventoryManager.IsInInventory("Upgrade"))
         {
-            inventoryManager.Toggle(" ", false);
+            inventoryManager.ToggleOff();
         }
         else
         {
-            if (dst > interactDst && !inventoryManager.inventorys[index].Enabled())
+            if (dst > interactDst && !inventoryManager.IsInInventory("Upgrade"))
             {
                 animator.SetBool(toggleAnimation, false);
             }

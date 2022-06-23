@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("References")]
     public Transform camHolder;
-    public Transform cam, targetCam, rotationCam, weaponHolder;
+    public Transform cam, targetCam,setTargetCam, rotationCam, weaponHolder;
     public InventoryManager inventoryManager;
 
     [Header("Movement")]
@@ -18,16 +18,11 @@ public class PlayerMovement : MonoBehaviour
     [Space(15)]
     public float movSmoothTime;
     public float jumpSpeed;
-    Vector3 movement;
-    Vector3 movVelocity;
-
-    Vector3 targetCamPos;
 
     [Header("Rotation")]
     public float xSens;
     public float ySens;
     public float rotSmoothTime;
-    float scrollDelta;
 
     public Vector2 clampAngles;
     float xRot;
@@ -39,11 +34,12 @@ public class PlayerMovement : MonoBehaviour
     public float mouseScrollSpeed;
     public float camSpeed;
     public float camRotSpeed;
+    public float dstToPlayer;
 
     [Header("Aiming")]
     public Transform aimingCamPos;
 
-    Vector3 defaultCamPos, camAimVelocity;
+    Vector3 camAimVelocity;
     public float aimSensMultiplier;
 
     [Header("Other")]
@@ -76,7 +72,6 @@ public class PlayerMovement : MonoBehaviour
     }
     void Start()
     {
-        defaultCamPos = cam.localPosition;
         Cursor.lockState = CursorLockMode.Locked;
         rb = GetComponent<Rigidbody>();
         defaultFOV = Camera.main.fieldOfView;
@@ -90,6 +85,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(!inventoryManager.IsInInventory()) MouseAndRotation();
 
+        SetTargetCam();
         CamSettings();
     }
 
@@ -114,11 +110,20 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    void SetTargetCam()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(setTargetCam.position, setTargetCam.forward,out hit, dstToPlayer))
+        {
+            targetCam.transform.position = hit.point;
+        }
+    }
+
     void MouseAndRotation()
     { 
         //Rotation
           float aimsens = Aiming ? aimSensMultiplier : 1;
-         Vector2 targetRot = new Vector2(Input.GetAxis("Mouse Y") * xSens * Time.deltaTime * aimsens, Input.GetAxis("Mouse X") * ySens * Time.deltaTime * aimsens);
+         Vector2 targetRot = new(Input.GetAxis("Mouse Y") * xSens * Time.deltaTime * aimsens, Input.GetAxis("Mouse X") * ySens * Time.deltaTime * aimsens);
 
         xRot -= targetRot.x;
          xRot = Mathf.Clamp(xRot, clampAngles.x, clampAngles.y);

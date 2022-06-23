@@ -6,6 +6,11 @@ public class UpgradeStationManager : MonoBehaviour
 {
     public UpgradeStation[] stations;
 
+    Transform target;
+    private void Start()
+    {
+        target = PlayerMovement.player.transform;
+    }
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -14,7 +19,7 @@ public class UpgradeStationManager : MonoBehaviour
         foreach (var station in stations)
         {
             station.enabled = false;
-            float dst = Vector3.Distance(station.transform.position, PlayerMovement.player.transform.position);
+            float dst = Vector3.Distance(station.transform.position, target.position);
             if (dst < minDst)
             {
                 minDst = dst;

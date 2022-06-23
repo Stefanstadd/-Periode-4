@@ -7,19 +7,22 @@ public class InventoryManager : MonoBehaviour
 {
     public Inventory[] inventorys;
 
+    public UIButton inventoryButton;
+    public GameMenuManager gameMenu;
+
+
     public GameObject baseHud;
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab) || (IsInInventory() && Input.GetButtonDown("Escape")))
-        {
-            Toggle(" ", false);
-        }
+        CheckInventory();
 
+        //zet de state van de main HUD
         baseHud.SetActive(!IsInInventory());
     }
     public void Toggle(string inventoryID, bool value)
     {
+        print("Toggle");
         for (int i = 0; i < inventorys.Length; i++)
         {
             Inventory inv = inventorys[i];
@@ -40,18 +43,37 @@ public class InventoryManager : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
     }
 
-    public int GetIndexOfInventory(string id)
+    public void ToggleOff()
     {
-        int index = 0;
+        print("Toggle Off");
         for (int i = 0; i < inventorys.Length; i++)
         {
-            if (inventorys[i].CompareId(id))
-            {
-                index = i;
-                break;
-            }
+            inventorys[i].Disable();
         }
-        return index;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+
+
+    void CheckInventory()
+    {
+        if (CanOpenInventory() && Input.GetButtonDown("TAB"))
+        {
+            inventoryButton.OnUseButton();
+            Toggle("Inventory", true);
+        }
+        else if (IsInInventory() && Input.GetButtonDown("TAB") || Input.GetButtonDown("Escape"))
+        {
+            ToggleOff();
+        }
+        
+    }
+
+    bool CanOpenInventory()
+    {
+        if (gameMenu.InMenu) return false;
+        if (IsInInventory()) return false;
+        return true;
     }
 
     public bool IsInInventory()
@@ -63,11 +85,26 @@ public class InventoryManager : MonoBehaviour
         return false;
     }
 
+    public bool IsInInventory(string inventoryID)
+    {
+        for (int i = 0; i < inventorys.Length; i++)
+        {
+            if (inventorys[i].CompareId(inventoryID))
+            {
+                if (inventorys[i].Enabled())
+                    return true;
+                else 
+                    return false;
+            }
+        }
+        return false;
+    }
+
     [System.Serializable]
     public struct Inventory
     {
         public string inventoryId;
-        public GameObject gameObject;
+        [SerializeField] GameObject gameObject;
         public Animator animator;
         public int value;
 

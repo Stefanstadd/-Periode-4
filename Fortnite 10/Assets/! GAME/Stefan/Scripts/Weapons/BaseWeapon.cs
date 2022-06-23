@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System.Threading.Tasks;
 using UnityEngine.VFX;
 
@@ -17,6 +18,7 @@ public abstract class BaseWeapon : MonoBehaviour
     public Transform shootPos;
     public Transform fpsCam;
     public InventoryManager inventoryManager;
+    public Sprite weaponUIImage;
     Animator animator;
 
     [Header("Upgrades")]

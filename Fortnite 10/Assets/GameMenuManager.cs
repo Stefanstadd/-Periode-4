@@ -7,8 +7,7 @@ public class GameMenuManager : MonoBehaviour
 {
 
     public InventoryManager inventory;
-
-    bool _Paused 
+    public bool InMenu 
     {
         get
         {
@@ -27,7 +26,7 @@ public class GameMenuManager : MonoBehaviour
         if (inventory != null && inventory.IsInInventory()) return;
         if (Input.GetButtonDown("Escape"))
         {
-            OnChangeMenuState(!_Paused);
+            OnChangeMenuState(!InMenu);
         }
     }
 
@@ -37,7 +36,7 @@ public class GameMenuManager : MonoBehaviour
 
         gameObject.SetActive(active);
 
-        Cursor.lockState = active ? CursorLockMode.None : CursorLockMode.Locked;
+        Cursor.lockState = active ? CursorLockMode.Confined : CursorLockMode.Locked;
 
         Time.timeScale = active ? 0 : 1;
     }
