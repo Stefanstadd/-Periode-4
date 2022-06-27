@@ -202,6 +202,7 @@ public abstract class BaseWeapon : MonoBehaviour
 [System.Serializable]
 public struct WeaponUpgrade
 {
+    public Color upgradeColor;
     [Header("Upgrade Settings")]
     public int upDamage;
     public float increaseFireRate;

@@ -27,6 +27,9 @@ public class InventoryManager : MonoBehaviour
     }
     public void Toggle(string inventoryID, bool value)
     {
+        //Set Cursor State
+        Cursor.lockState = CursorLockMode.None;
+
         print("Toggle");
         for (int i = 0; i < inventorys.Length; i++)
         {
@@ -39,13 +42,6 @@ public class InventoryManager : MonoBehaviour
             else if(inv.Enabled())
                 inv.Disable();
         }
-
-        //Set Cursor State
-
-        if (value)
-            Cursor.lockState = CursorLockMode.None;
-        else 
-            Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void ToggleOff()

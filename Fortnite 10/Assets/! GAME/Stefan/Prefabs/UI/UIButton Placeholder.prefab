@@ -91,6 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponImage: {fileID: 4768726103192094442}
+  border: {fileID: 7483432373500986481}
   colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.63584906, g: 1, b: 0.9206278, a: 1}
@@ -98,7 +99,8 @@ MonoBehaviour:
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 1}
     m_ColorMultiplier: 1
-    m_FadeDuration: 0
+    m_FadeDuration: 1
+  colorSmoothTime: 5
 --- !u!1 &5242214537950223995
 GameObject:
   m_ObjectHideFlags: 0

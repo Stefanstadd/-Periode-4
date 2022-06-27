@@ -6,14 +6,25 @@ using TMPro;
 
 public class InventoryUI : MonoBehaviour
 {
+    [Header("References")]
     public BaseWeapon[] weapons;
     InventoryUIButton[] uIButtons;
 
+    public Image[] colorChangeables;
+
+    [Space(20)]
+    [Header("UI")]
+    public Image gunImage;
+    public TextMeshProUGUI weaponName, weaponDescription, weaponTier, weaponBullets, weaponUpgrades;
+
+
+    [Space(20)]
     [Header("Buttons")]
 
     public Transform buttonsParent;
     public GameObject buttonPrefab;
     public Vector3 startPos;
+    public float minDst;
     public float spaceBtwn;
 
     private void Start()
@@ -43,6 +54,16 @@ public class InventoryUI : MonoBehaviour
         UpdateButtons();
     }
 
+    void ChangeWeaponDisplay(InventoryUIButton button)
+    {
+        var curWeaponUpgrade = button.weapon.possibleUpgrades[button.weapon.currentUpgrade];
+
+        foreach (var img in colorChangeables)
+        {
+            img.color = curWeaponUpgrade.upgradeColor;
+        }
+    }
+
     void UpdateButtons()
     {
         InventoryUIButton hoveredButton = null;
@@ -51,11 +72,26 @@ public class InventoryUI : MonoBehaviour
         var mousePos = Input.mousePosition;
         for (int i = 0; i < uIButtons.Length; i++)
         {
+            uIButtons[i].SetColor(ButtonMode.Normal);
+
             float dst = Vector3.Distance(uIButtons[i].transform.position, mousePos);
-            if(dst< closestDst)
+            if(dst< closestDst && dst < minDst)
             {
                 hoveredButton = uIButtons[i];
                 closestDst = dst;
+            }
+        }
+
+        if (hoveredButton)
+        {
+            hoveredButton.SetColor(ButtonMode.Highlighted);
+
+            print("a");
+            if (Input.GetButtonDown("Fire1"))
+            {
+                print("b");
+                ChangeWeaponDisplay(hoveredButton);
+                hoveredButton.SetColor(ButtonMode.Pressed);
             }
         }
     }
