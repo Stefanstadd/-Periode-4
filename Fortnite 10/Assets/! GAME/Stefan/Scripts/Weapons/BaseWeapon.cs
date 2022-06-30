@@ -7,10 +7,6 @@ using UnityEngine.VFX;
 
 public abstract class BaseWeapon : MonoBehaviour
 {
-    [Header("Weapon Positioning")]
-    public Vector3 localPos;
-    public Vector3 localRot;
-
     [Header("References")]
     public Crosshair crosshair;
     public DamageTextManager damageText;
@@ -90,7 +86,11 @@ public abstract class BaseWeapon : MonoBehaviour
         RaycastHit hit;
         if(Physics.Raycast(shootPos.position,shootPos.forward,out hit))
         {
-            crosshair.SetCrosshair(hit.point);
+            if((!playerMovement.Sprinting) && (playerMovement.Moving && playerMovement.Aiming))
+                crosshair.SetCrosshair(hit.point);
+            else
+                crosshair.ResetCrosshair();
+            
 
             if (CanHitTarget(hit))
             {
@@ -153,16 +153,8 @@ public abstract class BaseWeapon : MonoBehaviour
         autoFire = !autoFire;
     }
 
-    public void OnSelectWeapon()
-    {
-        transform.localPosition = localPos;
-        transform.localEulerAngles = localRot;
-        GetComponent<Collider>().enabled = false;
-    }
-
     public void OnDeselectWeapon()
     {
-        GetComponent<Collider>().enabled = true;
         crosshair.ResetCrosshair();
     }
 

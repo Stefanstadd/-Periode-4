@@ -26,7 +26,7 @@ public class BaseEnemy : MonoBehaviour
 
     Transform target;
     NavMeshAgent agent;
-    Wave wave;
+    public Wave wave;
 
     Animator animator;
 
@@ -41,6 +41,8 @@ public class BaseEnemy : MonoBehaviour
         InvokeRepeating("UpdateEnemy", 0, 0.1f);
         
         agent = GetComponent<NavMeshAgent>();
+        
+        if(spawnedEnemy)
         animator = spawnedEnemy.GetComponent<Animator>();   
     }
     public void InitializeEnemy(EnemyData data,Wave wave)

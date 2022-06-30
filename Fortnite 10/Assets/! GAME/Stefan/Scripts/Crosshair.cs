@@ -56,7 +56,7 @@ public class Crosshair : MonoBehaviour
         foreach(Image image in images)
         image.color = Color.Lerp(image.color, targetColor, _colorLerp);
 
-        transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref posVelocity, posSmoothTime * Time.deltaTime);
+        transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref posVelocity, posSmoothTime);
 
         transform.localScale = Vector3.MoveTowards(transform.localScale,targetSize/* + DistanceSize()*/  ,maxSizeDelta * Time.deltaTime);
 
