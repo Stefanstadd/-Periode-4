@@ -95,7 +95,7 @@ public class HUDManager : MonoBehaviour
     void SetBulletsDisplay()
     {
         currentMag.text = currentWeapon.currentMagSize.ToString();
-        totalBullets.text = $"|  {PlayerInventory.arBullets}";
+        totalBullets.text = $"|  {currentWeapon.ammoLeft}";
 
         for (int i = 0; i < bulletsAnimator.Length; i++)
         {

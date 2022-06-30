@@ -211,6 +211,7 @@ public class BaseEnemy : MonoBehaviour
     }
     void Die()
     {
+        RageManager.AddRage();
         if (wave != null) wave.killed++;
         var bytes = Instantiate(this.bytes, transform.position, Quaternion.identity);
         bytes.GetComponentInChildren<Byte>().amount = Mathf.RoundToInt(Random.Range(data.byteDrops.x,data.byteDrops.y) * dataMultiplier);

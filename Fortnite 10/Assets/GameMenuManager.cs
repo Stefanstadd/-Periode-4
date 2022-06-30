@@ -28,6 +28,11 @@ public class GameMenuManager : MonoBehaviour
         {
             OnChangeMenuState(!InMenu);
         }
+
+        if (!gameObject.activeInHierarchy) return;
+
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
     }
 
     public void OnChangeMenuState(bool active)
@@ -36,7 +41,7 @@ public class GameMenuManager : MonoBehaviour
 
         gameObject.SetActive(active);
 
-        Cursor.lockState = active ? CursorLockMode.None : CursorLockMode.Locked;
+        Cursor.lockState = active ? CursorLockMode.Confined : CursorLockMode.Locked;
         Cursor.visible = active;
 
         Time.timeScale = active ? 0 : 1;

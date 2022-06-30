@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Ground
   - Base HUD
+  - Upgrade Station
   layers:
   - Default
   - TransparentFX

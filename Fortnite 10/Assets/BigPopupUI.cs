@@ -25,6 +25,8 @@ public class BigPopupUI : MonoBehaviour
     float targetStrength;
     float stengthVel;
     public bool Active { get { return animator.GetBool(active); } }
+
+    bool canChangeVignette;
     void Start()
     {
         volume.profile.TryGet(out vignette);
@@ -41,7 +43,8 @@ public class BigPopupUI : MonoBehaviour
             Popup("Test","q4waetewt");
         }
 
-        vignette.intensity.value = Mathf.SmoothDamp(vignette.intensity.value, targetStrength, ref stengthVel, strengthSmoothTime);
+        if(canChangeVignette)
+            vignette.intensity.value = Mathf.SmoothDamp(vignette.intensity.value, targetStrength, ref stengthVel, strengthSmoothTime);
     }
 
     public async void Popup(string mainText,string secondaryText)
@@ -49,7 +52,7 @@ public class BigPopupUI : MonoBehaviour
         animator.SetFloat("Speed", speed);
 
         if (Active) return;
-
+        canChangeVignette = true;
         this.mainText.text = mainText;
         this.secondaryText.text = secondaryText;
 
@@ -62,5 +65,8 @@ public class BigPopupUI : MonoBehaviour
 
         await Task.Delay((int)(strengthWaitTime * 1000));
         targetStrength = defaultStrength;
+
+        await Task.Delay(1500);
+        canChangeVignette = false;
     }
 }

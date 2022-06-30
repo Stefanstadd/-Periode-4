@@ -15,7 +15,8 @@ public class Description : MonoBehaviour
 
     float interactTimer;
 
-    Vector3 defaultScale;
+    Vector3 defaultScale { get; set; }
+
     Vector3 targetScale;
     Vector3 scaleVelocity;
     Vector3 targetPos;
@@ -109,6 +110,7 @@ public class Description : MonoBehaviour
         if (!active) return;
         active = false;
         targetScale = Vector3.zero;
+        print("disable");
     }
     
 }

@@ -96,7 +96,7 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(Vector3.down * gravity);
         }
 
-        currentSpeed = Mathf.SmoothDamp(currentSpeed, Sprinting ? runSpeed : walkSpeed, ref _speedVel, speedChangeRate * Time.fixedDeltaTime);
+        currentSpeed = Mathf.SmoothDamp(currentSpeed, Sprinting ? runSpeed : walkSpeed, ref _speedVel, speedChangeRate);
 
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
@@ -128,7 +128,7 @@ public class PlayerMovement : MonoBehaviour
         xRot -= targetRot.x;
          xRot = Mathf.Clamp(xRot, clampAngles.x, clampAngles.y);
 
-         rotation = Vector2.SmoothDamp(rotation, targetRot, ref rotVelocity, rotSmoothTime * Time.deltaTime);
+         rotation = Vector2.SmoothDamp(rotation, targetRot, ref rotVelocity, rotSmoothTime);
 
          targetCam.transform.localEulerAngles = new Vector3(xRot, 0, 0);
 
@@ -150,15 +150,15 @@ public class PlayerMovement : MonoBehaviour
 
         if (Aiming && !inventory.NoWeaponSelected && !inventoryManager.IsInInventory())
         {
-            cam.transform.position = Vector3.SmoothDamp(cam.transform.position, aimingCamPos.transform.position, ref camAimVelocity, camSpeed * Time.deltaTime);
+            cam.transform.position = Vector3.SmoothDamp(cam.transform.position, aimingCamPos.transform.position, ref camAimVelocity, camSpeed);
         }
         else
         {
-            cam.transform.localPosition = Vector3.SmoothDamp(cam.transform.localPosition, Vector3.zero, ref camAimVelocity, camSpeed * Time.deltaTime);
+            cam.transform.localPosition = Vector3.SmoothDamp(cam.transform.localPosition, Vector3.zero, ref camAimVelocity, camSpeed);
         }
 
 
-        camHolder.transform.position = Vector3.SmoothDamp(camHolder.transform.position, targetCam.transform.position, ref velocity, camSpeed * Time.deltaTime);
+        camHolder.transform.position = Vector3.SmoothDamp(camHolder.transform.position, targetCam.transform.position, ref velocity, camSpeed);
         cam.transform.rotation = Quaternion.Lerp(cam.transform.rotation, targetCam.transform.rotation, camRotSpeed);
     }
 

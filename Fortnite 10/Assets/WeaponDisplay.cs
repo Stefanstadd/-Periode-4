@@ -17,6 +17,6 @@ public class WeaponDisplay : MonoBehaviour
     void Update()
     {
         if (currentWeapon == null) return;
-        bullets.text = $"{currentWeapon.currentMagSize} / {PlayerInventory.arBullets} ";
+        bullets.text = $"{currentWeapon.currentMagSize} / {currentWeapon.ammoLeft} ";
     }
 }

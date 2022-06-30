@@ -21,23 +21,23 @@ public class UpgradeStation : MonoBehaviour
     void Update()
     {
         float dst = Vector3.Distance(target.transform.position, transform.position);
-        if (dst < interactDst && !inventoryManager.IsInInventory("Upgrade"))
+        if (dst < interactDst && !inventoryManager.IsInInventory("Upgrade")) // the player is near a upgrade station and can interact with it
         {
             description.Enable(transform.position);
             Description.onInteract = delegate{ inventoryManager.Toggle("Upgrade", true); };
             animator.SetBool(toggleAnimation,true);
         }
-        else if(dst > interactDst && inventoryManager.IsInInventory("Upgrade"))
+        else if(dst > interactDst && inventoryManager.IsInInventory("Upgrade"))//the inventory closes and the player cannot interact from this distance
         {
             inventoryManager.ToggleOff();
         }
         else
         {
-            if (dst > interactDst && !inventoryManager.IsInInventory("Upgrade"))
+            if (dst > interactDst && !inventoryManager.IsInInventory("Upgrade"))// disabled the station and plays the closing animation
             {
                 animator.SetBool(toggleAnimation, false);
+                description.Disable();
             }
-            description.Disable();
         }
     }
 }

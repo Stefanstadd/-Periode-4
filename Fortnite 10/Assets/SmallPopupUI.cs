@@ -25,6 +25,8 @@ public class SmallPopupUI : MonoBehaviour
 
     public bool Active { get { return animator.GetBool(active); } }
 
+
+    bool canChangeVignette;
     Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -46,13 +48,14 @@ public class SmallPopupUI : MonoBehaviour
             Popup("Test");
         }
 
-        vignette.intensity.value = Mathf.SmoothDamp(vignette.intensity.value, targetStrength, ref stengthVel, strengthSmoothTime);
+        if(canChangeVignette)
+            vignette.intensity.value = Mathf.SmoothDamp(vignette.intensity.value, targetStrength, ref stengthVel, strengthSmoothTime);
     }
 
     public async void Popup(string text)
     {
         if (Active) return;
-
+        canChangeVignette = true;
         animator.SetFloat("Speed", speed);
 
         this.text.text = text;
@@ -68,5 +71,7 @@ public class SmallPopupUI : MonoBehaviour
         await System.Threading.Tasks.Task.Delay((int)(strengthWaitTime * 1000));
 
         targetStrength = defaultStrength;
+        await System.Threading.Tasks.Task.Delay(1500);
+        canChangeVignette = false;
     }
 }

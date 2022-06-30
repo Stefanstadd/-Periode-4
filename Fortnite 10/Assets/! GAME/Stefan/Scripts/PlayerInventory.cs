@@ -15,7 +15,6 @@ public class PlayerInventory : MonoBehaviour
     [SerializeField]float healTimer;
     public GameObject VFX_Healing;
 
-    public static int arBullets = int.MaxValue;
     public static PlayerInventory playerInventory;
 
     public Transform WeaponHolder;

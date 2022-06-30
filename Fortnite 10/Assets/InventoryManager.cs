@@ -28,7 +28,8 @@ public class InventoryManager : MonoBehaviour
     public void Toggle(string inventoryID, bool value)
     {
         //Set Cursor State
-        Cursor.lockState = CursorLockMode.None;
+        Cursor.lockState = value? CursorLockMode.Confined : CursorLockMode.Locked;
+        Cursor.visible = value;
 
         print("Toggle");
         for (int i = 0; i < inventorys.Length; i++)
@@ -52,6 +53,7 @@ public class InventoryManager : MonoBehaviour
             inventorys[i].Disable();
         }
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
 

@@ -121,7 +121,7 @@ public class RaycastWeapon : BaseWeapon
 
     public override async void Reload()
     {
-        if (PlayerInventory.arBullets <= 0) return;
+        if (ammoLeft <= 0) return;
         reloading = true;
 
         await Task.Delay(Mathf.RoundToInt(reloadTime * 1000));
@@ -130,12 +130,12 @@ public class RaycastWeapon : BaseWeapon
     
         int bulletsNeeded = maxMagSize - currentMagSize;
         currentMagSize += bulletsNeeded;
-        PlayerInventory.arBullets -= bulletsNeeded;
+        ammoLeft -= bulletsNeeded;
 
-        if (PlayerInventory.arBullets < 0)
+        if (ammoLeft < 0)
         {
-            currentMagSize += PlayerInventory.arBullets;
-            PlayerInventory.arBullets = 0;
+            currentMagSize += ammoLeft;
+            ammoLeft = 0;
         }
         reloading = false;
     }

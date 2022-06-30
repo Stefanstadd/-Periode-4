@@ -38,6 +38,7 @@ public abstract class BaseWeapon : MonoBehaviour
     public int maxMagSize;
     public int currentMagSize;
     public int displayFlashAmount;
+    public int ammoLeft;
 
     [Space(20)]
     public float nextTimeToFire;
@@ -65,6 +66,7 @@ public abstract class BaseWeapon : MonoBehaviour
 
     private void Start()
     {
+        ammoLeft = 231;
         animator = GetComponent<Animator>();
         playerMovement = transform.root.GetComponent<PlayerMovement>();
         currentMagSize = maxMagSize;
@@ -216,4 +218,17 @@ public struct WeaponUpgrade
     [Header("VFX")]
 
     public VisualEffect onBuy;
+
+    WeaponUpgrade(Color color)
+    {
+        upgradeColor = color;
+        upDamage = 0;
+        increaseFireRate = 0;
+        reloadTime = 0;
+        maxMagSize = 0;
+        count = 0;
+        cost = 0;
+        onBuy = null;
+    }
+    public static WeaponUpgrade First { get { return new WeaponUpgrade(Color.white); } }
 }

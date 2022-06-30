@@ -15,7 +15,7 @@ public class UpgradeButtons : MonoBehaviour
     public Image[] upgradeImages;
     public Color active, hovered, disabled;
     bool hoveredOverButton;
-    void Update()
+    void Update()   
     {
         HoverOverButtons();
         CheckUpgradeButton();
