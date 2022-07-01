@@ -114,6 +114,11 @@ public class RaycastWeapon : BaseWeapon
                 if (info.enemy)
                 {
                     info.enemy.TakeDamage(info.inflictedDamage);
+
+                    if(info.inflictedDamage >= info.enemy.data.maxHP * info.enemy.wave.multiplier.hp)
+                    {
+                        Toasty.Toast();
+                    }
                 }
             }
         }
@@ -121,7 +126,7 @@ public class RaycastWeapon : BaseWeapon
 
     public override async void Reload()
     {
-        if (ammoLeft <= 0) return;
+        if (ammoLeft <= 0 || reloading) return;
         reloading = true;
 
         await Task.Delay(Mathf.RoundToInt(reloadTime * 1000));

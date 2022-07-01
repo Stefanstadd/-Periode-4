@@ -57,11 +57,47 @@ public class PlayerMovement : MonoBehaviour
 
     PlayerInventory inventory;
     Rigidbody rb;
+    Animator animator;
 
-    public bool Aiming { get { return Input.GetButton("Fire2"); } }
-    bool IsGrounded { get { return Physics.Raycast(transform.position, Vector3.down, detectRange, groundMask); } }
+    public bool Aiming 
+    { 
+        get 
+        {
+            return Input.GetButton("Fire2");
+        }
+    }
+    public bool IsGrounded 
+    { 
+        get 
+        { 
+            return Physics.Raycast(transform.position, Vector3.down, detectRange, groundMask);
+        } 
+    }
 
-    bool Sprinting { get { return Input.GetButton("Sprint") && !Aiming; } }
+    public bool Sprinting 
+    { 
+        get 
+        { 
+            return Input.GetButton("Sprint") && !Aiming; 
+        } 
+    }
+
+    public bool Moving 
+    { 
+        get 
+        { 
+            if (Input.GetButton("Horizontal") || Input.GetButton("Vertical")) return true; 
+            return false;
+        } 
+    }
+
+    public bool BackwardsMovement
+    {
+        get
+        {
+            return Input.GetAxis("Vertical") < 0;
+        }
+    }
 
     private void Awake()
     {
@@ -77,6 +113,7 @@ public class PlayerMovement : MonoBehaviour
         defaultFOV = Camera.main.fieldOfView;
         inventory = GetComponent<PlayerInventory>();
         currentSpeed = walkSpeed;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -87,6 +124,7 @@ public class PlayerMovement : MonoBehaviour
 
         SetTargetCam();
         CamSettings();
+        ManageAnimations();
     }
 
     private void FixedUpdate()
@@ -110,10 +148,36 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    void ManageAnimations()
+    {
+        //Run and walk animations
+        // index 0 = idle
+        // index 1 = walking
+        // index 2 = running
+
+        string sprintName = "MoveState";
+        string speedName = "Speed";
+        string aimName = "Aiming";
+
+        animator.SetBool(aimName, Aiming);
+
+        if (!Moving)
+        {
+            animator.SetInteger(sprintName, 0);
+            return;
+        }
+
+        animator.SetInteger(sprintName, Sprinting? 2 : 1);
+
+
+        //Reversing
+
+        animator.SetFloat(speedName, BackwardsMovement? -1 : 1);
+    }
+
     void SetTargetCam()
     {
-        RaycastHit hit;
-        if (Physics.Raycast(setTargetCam.position, setTargetCam.forward,out hit, dstToPlayer))
+        if (Physics.Raycast(setTargetCam.position, setTargetCam.forward, out RaycastHit hit, dstToPlayer))
         {
             targetCam.transform.position = hit.point;
         }
