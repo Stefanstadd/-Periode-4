@@ -22450,7 +22450,7 @@ MonoBehaviour:
       amount: 10
     multiplier:
       damage: 1.2
-      hp: 1.2
+      hp: 1.15
       resistance: 1.2
       movementSpeed: 1.2
       rotationSpeed: 1.2
@@ -22461,7 +22461,7 @@ MonoBehaviour:
       amount: 15
     multiplier:
       damage: 1.4
-      hp: 1.4
+      hp: 1.28
       resistance: 1.6
       movementSpeed: 1.4
       rotationSpeed: 1.4
@@ -40824,7 +40824,7 @@ MonoBehaviour:
   spriteScale: {x: 0.130952, y: 0.130952, z: 0.130952}
   possibleUpgrades:
   - upgradeColor: {r: 0.7018868, g: 1, b: 0.7018868, a: 1}
-    upDamage: 5
+    upDamage: 7
     increaseFireRate: 0.3
     reloadTime: 0.5
     maxMagSize: 1
