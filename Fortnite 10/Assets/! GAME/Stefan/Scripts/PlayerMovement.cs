@@ -136,6 +136,8 @@ public class PlayerMovement : MonoBehaviour
             Cursor.visible = true;
             return;
         }
+        else
+            deathScreen.gameObject.SetActive(false);
         if (GameMenuManager.Paused) return;
 
         if(!inventoryManager.IsInInventory()) MouseAndRotation();

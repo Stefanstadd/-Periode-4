@@ -328,6 +328,7 @@ GameObject:
   - component: {fileID: 4294864685199967567}
   - component: {fileID: 7622134659168814185}
   - component: {fileID: 6653507047627826389}
+  - component: {fileID: 8555369755420236259}
   m_Layer: 0
   m_Name: Goblin Beacon Tower
   m_TagString: Untagged
@@ -440,3 +441,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 0.28204763, z: 0.8}
   m_Center: {x: -0.009000063, y: 0.7700979, z: -0.0000034570694}
+--- !u!114 &8555369755420236259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4759401851823650918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f870a2f7a651424d8813a394cb54f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableDistance: 80
+  gizmoColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  active: 1

@@ -77,6 +77,8 @@ public class InventoryUI : MonoBehaviour
 
         //Set gun image
         gunImage.sprite = weapon.weaponUIImage;
+        gunImage.SetNativeSize();
+        gunImage.transform.localScale = button.weapon.spriteScale;
 
         //Set name and description
         weaponName.text = weapon.weaponName;

@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: c94a7902eff993542bfc1829fa1aab3d, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 7c971b499834cdd479ed7576021284d2, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -671,6 +671,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!4 &21893236 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 615768643}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &21979503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -826,6 +831,63 @@ Transform:
   m_Father: {fileID: 1760092312}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &30423004
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 66
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -37.782856
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -57.134644
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.259365
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1 &30711312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1668,6 +1730,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6888517701506340242, guid: 985251d7ed9fa774997f78802b98e6cd, type: 3}
   m_PrefabInstance: {fileID: 48438864}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &48886477
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -79.23186
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -56.994644
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -191.75562
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99812907
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.06114215
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -7.011
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &55255112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2304,6 +2423,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6815113509627669433, guid: 55649e2c765e6f04c81a0887915cfc5b, type: 3}
   m_PrefabInstance: {fileID: 78430891}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &79326132
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 156.69252
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -56.884644
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 241.85136
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &79452569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2435,6 +2611,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c6d71241e1a7c54dade70d6cbcd887f, type: 3}
+--- !u!4 &84777658 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 2133404980}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &85570418
 GameObject:
   m_ObjectHideFlags: 0
@@ -2664,7 +2845,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &90675555
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2938,6 +3119,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6888517701506340242, guid: 985251d7ed9fa774997f78802b98e6cd, type: 3}
   m_PrefabInstance: {fileID: 93517209}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &94567755
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 71
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 250.38751
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -56.974648
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 242.05757
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.96313596
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.26901507
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -31.211
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1 &102967681
 GameObject:
   m_ObjectHideFlags: 0
@@ -3412,6 +3650,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6815113509627669433, guid: 55649e2c765e6f04c81a0887915cfc5b, type: 3}
   m_PrefabInstance: {fileID: 117096495}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &118593743
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -22.088364
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -56.994644
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -202.2353
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &119410056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3738,6 +4033,120 @@ Transform:
   m_Father: {fileID: 1071138969}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -51.76596, y: 95.27134, z: 22.744543}
+--- !u!1001 &142276775
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -146.67557
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -57.05465
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -208.88231
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+--- !u!1001 &143675868
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 56
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -90.63324
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -55.224648
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 271.4159
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &145324271
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4315,6 +4724,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5457183115582606539, guid: 5ffd1429058a9324f9fa3c4dcbe1cb66, type: 3}
   m_PrefabInstance: {fileID: 161631144}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &161940596 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 48886477}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &162598178
 PrefabInstance:
@@ -6059,6 +6473,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9187606774498445359, guid: 495214619b8744f43907d6d899e059ae, type: 3}
   m_PrefabInstance: {fileID: 206166741}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &208063607
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 54.48649
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -57.204643
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -162.69383
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.98446393
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.1755873
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -20.226
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1 &209473664
 GameObject:
   m_ObjectHideFlags: 0
@@ -6304,6 +6775,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5457183115582606539, guid: 5ffd1429058a9324f9fa3c4dcbe1cb66, type: 3}
   m_PrefabInstance: {fileID: 212353322}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &218666432 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 94567755}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &218751652
 GameObject:
   m_ObjectHideFlags: 0
@@ -6402,6 +6878,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218751652}
   m_CullTransparentMesh: 1
+--- !u!1001 &220560914
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -270.32492
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -57.144646
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 278.20035
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.95653015
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.29163358
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -33.912
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1 &221805903
 GameObject:
   m_ObjectHideFlags: 0
@@ -6433,6 +6966,11 @@ Transform:
   m_Father: {fileID: 1817059228}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &224487548 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 734832310}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &225605449
 GameObject:
   m_ObjectHideFlags: 0
@@ -7452,6 +7990,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.4, y: 7.58, z: 0.4}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &254686740 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 2077108983}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &255128745
 GameObject:
   m_ObjectHideFlags: 0
@@ -7603,6 +8146,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b80f860ae98f46745bf30616ad754692, type: 3}
+--- !u!4 &259241867 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 142276775}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &261447993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7727,6 +8275,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6815113509627669433, guid: 55649e2c765e6f04c81a0887915cfc5b, type: 3}
   m_PrefabInstance: {fileID: 261774424}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &268480754 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 1836993878}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &269996063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7801,6 +8354,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2446293259664206313, guid: 40c51a4f90c5df24caf03efe43684e58, type: 3}
   m_PrefabInstance: {fileID: 269996063}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &275723943
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -180.95247
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -54.434647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 283.50757
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1 &276027835
 GameObject:
   m_ObjectHideFlags: 0
@@ -8063,6 +8673,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6815113509627669433, guid: 55649e2c765e6f04c81a0887915cfc5b, type: 3}
   m_PrefabInstance: {fileID: 284697766}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &284796253 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 220560914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &285459214
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 246.96034
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -57.05465
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 253.20476
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1 &288117288
 GameObject:
   m_ObjectHideFlags: 0
@@ -8602,6 +9274,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6888517701506340242, guid: 985251d7ed9fa774997f78802b98e6cd, type: 3}
   m_PrefabInstance: {fileID: 293032030}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &293493042 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 1761444813}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &294546852
 PrefabInstance:
@@ -9475,6 +10152,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 382461636120451628, guid: ee5b5de63257adf43ada95eb1d411bc6, type: 3}
   m_PrefabInstance: {fileID: 321481234}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &326655270 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 1370226140}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &328643589
 PrefabInstance:
@@ -10397,6 +11079,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6815113509627669433, guid: 55649e2c765e6f04c81a0887915cfc5b, type: 3}
   m_PrefabInstance: {fileID: 355701385}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &356449153
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 77
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 103.59772
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -56.934647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 241.4115
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1 &356869522
 GameObject:
   m_ObjectHideFlags: 0
@@ -10965,7 +11704,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &371491132
 GameObject:
@@ -11064,6 +11803,63 @@ RectTransform:
   m_AnchoredPosition: {x: 3.065, y: 6.179}
   m_SizeDelta: {x: 439.142, y: 412.497}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &375855828
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 59
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.807524
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -57.024643
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -186.52243
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9433694
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.33174428
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -38.749
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &378402906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12618,6 +13414,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 382461636120451628, guid: ee5b5de63257adf43ada95eb1d411bc6, type: 3}
   m_PrefabInstance: {fileID: 429242471}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &429975335
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -24.748564
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -57.034645
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -88.696976
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9815576
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.19116704
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -22.042
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &431471889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14774,7 +15627,7 @@ Transform:
   - {fileID: 1228664363}
   - {fileID: 2088000830}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &476503175
 MonoBehaviour:
@@ -15070,6 +15923,11 @@ Transform:
   m_Father: {fileID: 506669109}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &492429657 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 2004252537}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &496807304
 GameObject:
   m_ObjectHideFlags: 0
@@ -15681,6 +16539,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6815113509627669433, guid: 55649e2c765e6f04c81a0887915cfc5b, type: 3}
   m_PrefabInstance: {fileID: 510313606}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &513160292 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 757941594}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &514559623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16008,6 +16871,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6815113509627669433, guid: 55649e2c765e6f04c81a0887915cfc5b, type: 3}
   m_PrefabInstance: {fileID: 523479182}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &523586764 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 118593743}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &524736358
 GameObject:
   m_ObjectHideFlags: 0
@@ -16262,7 +17130,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &531915892
 PrefabInstance:
@@ -16860,6 +17728,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6815113509627669433, guid: 55649e2c765e6f04c81a0887915cfc5b, type: 3}
   m_PrefabInstance: {fileID: 546727030}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &547825852 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 2049029192}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &548047621
 PrefabInstance:
@@ -18765,6 +19638,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3527936122190046950, guid: 403e7e8846e61ee43be0124f1effd327, type: 3}
   m_PrefabInstance: {fileID: 615089176}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &615768643
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 74
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 175.34402
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -56.574646
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 234.8285
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1 &620434582
 GameObject:
   m_ObjectHideFlags: 0
@@ -18796,6 +19726,11 @@ Transform:
   m_Father: {fileID: 2119453580}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &625245956 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 1752908969}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &628819789
 GameObject:
   m_ObjectHideFlags: 0
@@ -19126,6 +20061,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9187606774498445359, guid: 495214619b8744f43907d6d899e059ae, type: 3}
   m_PrefabInstance: {fileID: 638239962}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &638540704
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -111.742905
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -55.08465
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 242.48657
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9162833
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.4005309
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -47.223
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &639247739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19250,6 +20242,16 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9187606774498445359, guid: 495214619b8744f43907d6d899e059ae, type: 3}
   m_PrefabInstance: {fileID: 640115588}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &642212466 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 375855828}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &643607407 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 275723943}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &645723755
 GameObject:
   m_ObjectHideFlags: 0
@@ -19280,7 +20282,7 @@ Transform:
   m_Children:
   - {fileID: 356869523}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &647064478
 PrefabInstance:
@@ -21276,29 +22278,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0e872b62cdc5dd4da2a04a30f40460b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popuptime: 4
+  popuptime: 3
   waitTime: 1
   text: {fileID: 673230752}
   timeLineMessages:
   - message: Welcome to this world, gentleman...
-    time: 3
+    time: 1
     executed: 0
   - message: On this part of the planet, there are 3 camps...
-    time: 3
+    time: 1
     executed: 0
   - message: These camps are filled with Goblins...
-    time: 3
+    time: 1
     executed: 0
   - message: Which are responsible for murdering our travellers long ago...
-    time: 3
+    time: 1
     executed: 0
   - message: Its time to make them pay...
-    time: 3
+    time: 1
     executed: 0
   - message: and thats, why you're here!
-    time: 3
+    time: 1
     executed: 0
-  - message: Use the scrool wheel or 1 & 2 to change weapons
+  - message: Use the scroll wheel or 1 & 2 to change weapons
     time: 34
     executed: 0
   - message: press LMB to shoot, RMB to aim
@@ -21307,13 +22309,13 @@ MonoBehaviour:
   - message: Around the map, you can find different stations
     time: 50
     executed: 0
-  - message: On these stations, you can upgrade ypur weapon
+  - message: On these stations, you can upgrade your weapon
     time: 50
     executed: 0
   - message: They were made by our early travelers
     time: 50
     executed: 0
-  - message: And thegse goblins have no clue how to disable them
+  - message: And these goblins have no clue how to disable them
     time: 50
     executed: 0
 --- !u!95 &692116705
@@ -22060,6 +23062,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 382461636120451628, guid: ee5b5de63257adf43ada95eb1d411bc6, type: 3}
   m_PrefabInstance: {fileID: 734724789}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &734832310
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.09906
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -57.134644
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -130.9373
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1 &734846862
 GameObject:
   m_ObjectHideFlags: 0
@@ -22851,6 +23910,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756702644}
   m_CullTransparentMesh: 1
+--- !u!1001 &757941594
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 79
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.132477
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -56.684647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 236.93756
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &758743655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23259,6 +24375,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 9187606774498445359, guid: 495214619b8744f43907d6d899e059ae, type: 3}
   m_PrefabInstance: {fileID: 778713443}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &785104079 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 1043899974}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &785801558
 GameObject:
@@ -24206,6 +25327,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5457183115582606539, guid: 5ffd1429058a9324f9fa3c4dcbe1cb66, type: 3}
   m_PrefabInstance: {fileID: 810422853}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &817176184 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 30423004}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &821932202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24329,6 +25455,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 382461636120451628, guid: ee5b5de63257adf43ada95eb1d411bc6, type: 3}
   m_PrefabInstance: {fileID: 822304757}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &824448112 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 356449153}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &825612261
 PrefabInstance:
@@ -24989,6 +26120,63 @@ Transform:
   m_Father: {fileID: 1551949501}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 21.586504, y: -69.466415, z: 84.72008}
+--- !u!1001 &841954970
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 57
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -46.286194
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -56.174644
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 254.3553
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1 &845231557
 GameObject:
   m_ObjectHideFlags: 0
@@ -25446,6 +26634,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848131049}
   m_CullTransparentMesh: 1
+--- !u!4 &857052188 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 841954970}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &857823425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29043,6 +30236,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2446293259664206313, guid: 40c51a4f90c5df24caf03efe43684e58, type: 3}
   m_PrefabInstance: {fileID: 976109092}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &976945219 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 79326132}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &977051409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29310,23 +30508,23 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1813759852}
     m_Modifications:
     - target: {fileID: 1214388629117708573, guid: b739f7e25bd3b2f45810e1bfd54abf9a, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 81
       objectReference: {fileID: 0}
     - target: {fileID: 1214388629117708573, guid: b739f7e25bd3b2f45810e1bfd54abf9a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.210399
+      value: 4.297923
       objectReference: {fileID: 0}
     - target: {fileID: 1214388629117708573, guid: b739f7e25bd3b2f45810e1bfd54abf9a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 69.49278
+      value: -57.831863
       objectReference: {fileID: 0}
     - target: {fileID: 1214388629117708573, guid: b739f7e25bd3b2f45810e1bfd54abf9a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -200.64604
+      value: -139.43848
       objectReference: {fileID: 0}
     - target: {fileID: 1214388629117708573, guid: b739f7e25bd3b2f45810e1bfd54abf9a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -29334,15 +30532,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1214388629117708573, guid: b739f7e25bd3b2f45810e1bfd54abf9a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1214388629117708573, guid: b739f7e25bd3b2f45810e1bfd54abf9a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1214388629117708573, guid: b739f7e25bd3b2f45810e1bfd54abf9a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1214388629117708573, guid: b739f7e25bd3b2f45810e1bfd54abf9a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -29715,6 +30913,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9187606774498445359, guid: 495214619b8744f43907d6d899e059ae, type: 3}
   m_PrefabInstance: {fileID: 1000179936}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1000636952 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 1530874326}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1013046709
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -288.26505
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -57.01465
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 157.45297
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &1015439529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30338,6 +31598,63 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1040986847
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -200.7677
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -56.994644
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -234.10292
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &1043836963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30400,6 +31717,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5457183115582606539, guid: 5ffd1429058a9324f9fa3c4dcbe1cb66, type: 3}
   m_PrefabInstance: {fileID: 1043836963}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1043899974
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.830916
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -57.134644
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 208.4062
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1 &1044969492
 GameObject:
   m_ObjectHideFlags: 0
@@ -30783,6 +32157,11 @@ Transform:
   m_Father: {fileID: 1817059228}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1054599051 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 1837192685}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1056209461
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31068,6 +32447,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6888517701506340242, guid: 985251d7ed9fa774997f78802b98e6cd, type: 3}
   m_PrefabInstance: {fileID: 1067350457}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1070028616
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -250.95332
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -56.974648
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -225.0113
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1 &1071138968
 GameObject:
   m_ObjectHideFlags: 0
@@ -32555,6 +33991,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 382461636120451628, guid: ee5b5de63257adf43ada95eb1d411bc6, type: 3}
   m_PrefabInstance: {fileID: 1112417926}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1112615837
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 61
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 55.807526
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -57.08465
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -172.50244
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &1115321157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33150,6 +34643,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5457183115582606539, guid: 5ffd1429058a9324f9fa3c4dcbe1cb66, type: 3}
   m_PrefabInstance: {fileID: 1126804128}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1129182726 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 1040986847}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1132892797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33540,7 +35038,7 @@ RectTransform:
   - {fileID: 1716023546}
   - {fileID: 391833902}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -33712,6 +35210,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9187606774498445359, guid: 495214619b8744f43907d6d899e059ae, type: 3}
   m_PrefabInstance: {fileID: 1139848669}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1140517356
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 167.98598
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -56.714645
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 237.71132
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1 &1145301520
 GameObject:
   m_ObjectHideFlags: 0
@@ -34235,6 +35790,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162320296}
   m_CullTransparentMesh: 1
+--- !u!1001 &1162379351
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -174.27155
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -51.26465
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -56.992367
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9759519
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.21798599
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -25.182
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1 &1162448844
 GameObject:
   m_ObjectHideFlags: 0
@@ -34368,6 +35980,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 403e7e8846e61ee43be0124f1effd327, type: 3}
+--- !u!1001 &1170616226
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 3971916243055248336, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_Name
+      value: Goblin Banner Pole (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_RootOrder
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -288.21246
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -53.954643
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 243.66757
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.07770612
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9969764
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -188.913
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
 --- !u!1001 &1171563669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34616,6 +36285,16 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6888517701506340242, guid: 985251d7ed9fa774997f78802b98e6cd, type: 3}
   m_PrefabInstance: {fileID: 1174926370}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1176623791 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 208063607}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1178153943 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 1013046709}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1182152498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34822,6 +36501,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2446293259664206313, guid: 40c51a4f90c5df24caf03efe43684e58, type: 3}
   m_PrefabInstance: {fileID: 1186044420}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1186195367
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 73
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 221.7478
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -55.674644
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 233.76692
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &1188147838
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36027,6 +37763,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9187606774498445359, guid: 495214619b8744f43907d6d899e059ae, type: 3}
   m_PrefabInstance: {fileID: 1218901448}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1219382948
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 47
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -259.97876
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -57.12465
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 24.517658
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &1219879551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37301,6 +39094,7 @@ MonoBehaviour:
   fpsCam: {fileID: 356869523}
   inventoryManager: {fileID: 2105106267}
   weaponUIImage: {fileID: 21300000, guid: 91fba5da7c83bf5438bccb2d3fe6f5e2, type: 3}
+  spriteScale: {x: 0.089718, y: 0.089718, z: 0.089718}
   possibleUpgrades:
   - upgradeColor: {r: 0.539231, g: 0.9622642, b: 0.5707512, a: 1}
     upDamage: 2
@@ -37553,6 +39347,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265933216}
   m_CullTransparentMesh: 1
+--- !u!1001 &1267564507
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -288.79034
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -54.664642
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 241.55911
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &1271290619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37691,6 +39542,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271325190}
   m_CullTransparentMesh: 1
+--- !u!4 &1282151336 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 429975335}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1282580946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37998,7 +39854,7 @@ Transform:
   - {fileID: 339361209}
   - {fileID: 284237493}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1293438024
 GameObject:
@@ -38965,6 +40821,7 @@ MonoBehaviour:
   fpsCam: {fileID: 356869523}
   inventoryManager: {fileID: 2105106267}
   weaponUIImage: {fileID: 21300000, guid: d0b7be25bda1e7344aff6886360e3403, type: 3}
+  spriteScale: {x: 0.130952, y: 0.130952, z: 0.130952}
   possibleUpgrades:
   - upgradeColor: {r: 0.7018868, g: 1, b: 0.7018868, a: 1}
     upDamage: 5
@@ -40512,6 +42369,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6815113509627669433, guid: 55649e2c765e6f04c81a0887915cfc5b, type: 3}
   m_PrefabInstance: {fileID: 1366661841}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1370226140
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -266.78918
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -57.074646
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 268.17697
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1 &1370291048
 GameObject:
   m_ObjectHideFlags: 0
@@ -42157,6 +44071,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5457183115582606539, guid: 5ffd1429058a9324f9fa3c4dcbe1cb66, type: 3}
   m_PrefabInstance: {fileID: 1421262991}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1421663820 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 1112615837}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1425058328
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42280,6 +44199,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 9187606774498445359, guid: 495214619b8744f43907d6d899e059ae, type: 3}
   m_PrefabInstance: {fileID: 1425838664}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1426437952 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 1162379351}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1427575929
 PrefabInstance:
@@ -42714,6 +44638,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 9187606774498445359, guid: 495214619b8744f43907d6d899e059ae, type: 3}
   m_PrefabInstance: {fileID: 1435356130}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1436215912 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 1735389433}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1436701008
 PrefabInstance:
@@ -43777,6 +45706,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 382461636120451628, guid: ee5b5de63257adf43ada95eb1d411bc6, type: 3}
   m_PrefabInstance: {fileID: 1478891274}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1479814192 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 2045376505}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1480176746
 GameObject:
   m_ObjectHideFlags: 0
@@ -44830,6 +46764,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6888517701506340242, guid: 985251d7ed9fa774997f78802b98e6cd, type: 3}
   m_PrefabInstance: {fileID: 1517115142}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1518204184 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 638540704}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1518224958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45278,6 +47217,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 382461636120451628, guid: ee5b5de63257adf43ada95eb1d411bc6, type: 3}
   m_PrefabInstance: {fileID: 1529045281}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1530874326
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -223.45247
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -56.024643
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 295.45755
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+--- !u!4 &1531269394 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1214388629117708573, guid: b739f7e25bd3b2f45810e1bfd54abf9a, type: 3}
+  m_PrefabInstance: {fileID: 981561637}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1531828776
 GameObject:
   m_ObjectHideFlags: 0
@@ -45362,6 +47363,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531828776}
   m_Mesh: {fileID: 289301614986012343, guid: 9b1196ba2016b6742a8e0a4c11af6806, type: 3}
+--- !u!4 &1535201906 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 1186195367}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1535786372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45423,6 +47429,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 9187606774498445359, guid: 495214619b8744f43907d6d899e059ae, type: 3}
   m_PrefabInstance: {fileID: 1535786372}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1538495271 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+  m_PrefabInstance: {fileID: 1687595807}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1539181437
 PrefabInstance:
@@ -46084,6 +48095,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6815113509627669433, guid: 55649e2c765e6f04c81a0887915cfc5b, type: 3}
   m_PrefabInstance: {fileID: 1547414360}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1549170415
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 62
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 29.53389
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -57.144646
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -150.45328
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &1550667680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46178,6 +48246,11 @@ Transform:
   m_Father: {fileID: 1961230565}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -89.22367, y: -177.76176, z: -122.70866}
+--- !u!4 &1552240920 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 1555612787}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1553068628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46438,6 +48511,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5457183115582606539, guid: 5ffd1429058a9324f9fa3c4dcbe1cb66, type: 3}
   m_PrefabInstance: {fileID: 1554528119}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1555612787
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 63
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.778667
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -57.08465
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -153.79393
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.94124866
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.3377145
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -39.475
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &1559731371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46638,6 +48768,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 9187606774498445359, guid: 495214619b8744f43907d6d899e059ae, type: 3}
   m_PrefabInstance: {fileID: 1564256320}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1573037351 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+  m_PrefabInstance: {fileID: 1170616226}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1573775332
 PrefabInstance:
@@ -47712,6 +49847,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6815113509627669433, guid: 55649e2c765e6f04c81a0887915cfc5b, type: 3}
   m_PrefabInstance: {fileID: 1598249031}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1600693153 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 1140517356}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1601477567
 GameObject:
   m_ObjectHideFlags: 0
@@ -48322,6 +50462,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b149d37d2952f4586d809d984a6693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1617356349 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 1219382948}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1618749476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51131,6 +53276,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1214388629117708573, guid: b739f7e25bd3b2f45810e1bfd54abf9a, type: 3}
   m_PrefabInstance: {fileID: 537813316}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1683133503 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 143675868}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1683211788
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51428,6 +53578,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1686500093}
   m_CullTransparentMesh: 1
+--- !u!1001 &1687595807
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 3971916243055248336, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_Name
+      value: Goblin Banner Pole
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_RootOrder
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -274.40247
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -53.964645
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 272.89755
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5575471
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8301453
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -112.227
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347315508225890666, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b13f58863e503e34bb8c50493cef2f8d, type: 3}
 --- !u!1 &1689058509
 GameObject:
   m_ObjectHideFlags: 0
@@ -52232,7 +54439,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708002387}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.65, y: 0.18699956, z: 116.19}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52923,6 +55130,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6888517701506340242, guid: 985251d7ed9fa774997f78802b98e6cd, type: 3}
   m_PrefabInstance: {fileID: 1724716406}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1725301189 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 1070028616}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1727358765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53241,6 +55453,63 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1735389433
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -28.186844
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -56.924644
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 193.25739
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &1737892284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53625,6 +55894,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2446293259664206313, guid: 40c51a4f90c5df24caf03efe43684e58, type: 3}
   m_PrefabInstance: {fileID: 1747438335}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1752908969
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.7258334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -57.064644
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 139.88531
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1 &1755747456
 GameObject:
   m_ObjectHideFlags: 0
@@ -54009,21 +56335,105 @@ PrefabInstance:
       propertyPath: hoverColor.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4143771178403976465, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d0b7be25bda1e7344aff6886360e3403, type: 3}
+    - target: {fileID: 4243517700977254964, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1581497166940476281, guid: 84c58cb93fd3d4f409b367e9c7d7c9da, type: 2}
+    - target: {fileID: 4243517700977254964, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813477795204985294, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 815
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813477795204985294, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 269
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813477795204985294, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.13363
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813477795204985294, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.13363
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813477795204985294, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.13363
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813477795204985294, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -2.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5948744114332943686, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1581497166940476281, guid: 84c58cb93fd3d4f409b367e9c7d7c9da, type: 2}
     - target: {fileID: 5948744114332943686, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4291952551
       objectReference: {fileID: 0}
+    - target: {fileID: 5948744114332943686, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960154146833154954, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1581497166940476281, guid: 84c58cb93fd3d4f409b367e9c7d7c9da, type: 2}
     - target: {fileID: 5960154146833154954, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4291952551
       objectReference: {fileID: 0}
+    - target: {fileID: 5960154146833154954, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6628269766866554914, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1581497166940476281, guid: 84c58cb93fd3d4f409b367e9c7d7c9da, type: 2}
+    - target: {fileID: 6628269766866554914, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6701995963916198961, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1581497166940476281, guid: 84c58cb93fd3d4f409b367e9c7d7c9da, type: 2}
+    - target: {fileID: 6701995963916198961, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740826451616647749, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1581497166940476281, guid: 84c58cb93fd3d4f409b367e9c7d7c9da, type: 2}
     - target: {fileID: 6740826451616647749, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4291952551
       objectReference: {fileID: 0}
+    - target: {fileID: 6740826451616647749, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909594710798231123, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1581497166940476281, guid: 84c58cb93fd3d4f409b367e9c7d7c9da, type: 2}
     - target: {fileID: 7909594710798231123, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4291952551
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909594710798231123, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8053335508276060085, guid: 6c31e4d0d29987e43bb89af1189c7d1f, type: 3}
       propertyPath: m_Name
@@ -54154,6 +56564,63 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.4, y: 7.58, z: 0.4}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &1761444813
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -265.54675
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -57.064644
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 103.56824
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.94253504
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.3341074
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -39.037
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &1763136715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54277,6 +56744,16 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5457183115582606539, guid: 5ffd1429058a9324f9fa3c4dcbe1cb66, type: 3}
   m_PrefabInstance: {fileID: 1768418404}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1768842531 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 1267564507}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1769206656 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 1549170415}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1769734445
 GameObject:
@@ -54660,7 +57137,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775321120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 41.1, y: 69.95, z: -233.6}
+  m_LocalPosition: {x: 41.1, y: 69.613, z: -233.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -54679,7 +57156,7 @@ Transform:
   - {fileID: 976109093}
   - {fileID: 479744158}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1775982523
 PrefabInstance:
@@ -55787,8 +58264,56 @@ Transform:
   - {fileID: 1513066086}
   - {fileID: 1675155071}
   - {fileID: 1681948539}
+  - {fileID: 1573037351}
+  - {fileID: 1538495271}
+  - {fileID: 523586764}
+  - {fileID: 161940596}
+  - {fileID: 259241867}
+  - {fileID: 1129182726}
+  - {fileID: 1725301189}
+  - {fileID: 254686740}
+  - {fileID: 84777658}
+  - {fileID: 1426437952}
+  - {fileID: 492429657}
+  - {fileID: 293493042}
+  - {fileID: 1617356349}
+  - {fileID: 1178153943}
+  - {fileID: 268480754}
+  - {fileID: 1768842531}
+  - {fileID: 284796253}
+  - {fileID: 326655270}
+  - {fileID: 1000636952}
+  - {fileID: 643607407}
+  - {fileID: 1518204184}
+  - {fileID: 1683133503}
+  - {fileID: 857052188}
+  - {fileID: 1479814192}
+  - {fileID: 642212466}
+  - {fileID: 1176623791}
+  - {fileID: 1421663820}
+  - {fileID: 1769206656}
+  - {fileID: 1552240920}
+  - {fileID: 224487548}
+  - {fileID: 1282151336}
+  - {fileID: 817176184}
+  - {fileID: 547825852}
+  - {fileID: 625245956}
+  - {fileID: 1436215912}
+  - {fileID: 785104079}
+  - {fileID: 218666432}
+  - {fileID: 2064621701}
+  - {fileID: 1535201906}
+  - {fileID: 21893236}
+  - {fileID: 1600693153}
+  - {fileID: 976945219}
+  - {fileID: 824448112}
+  - {fileID: 1054599051}
+  - {fileID: 513160292}
+  - {fileID: 1964665934}
+  - {fileID: 1531269394}
+  - {fileID: 1961889649}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1815763239
 PrefabInstance:
@@ -56010,7 +58535,7 @@ Transform:
   - {fileID: 221805904}
   - {fileID: 1054003550}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1818426273
 PrefabInstance:
@@ -56724,6 +59249,120 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6815113509627669433, guid: 55649e2c765e6f04c81a0887915cfc5b, type: 3}
   m_PrefabInstance: {fileID: 1833009596}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1836993878
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -281.56927
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -54.80465
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 243.01105
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9789443
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.20412768
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -23.557
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+--- !u!1001 &1837192685
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 78
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 52.934944
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -56.774643
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 211.96362
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &1842310602
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60615,35 +63254,35 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1813759852}
     m_Modifications:
     - target: {fileID: 3527936122190046950, guid: 403e7e8846e61ee43be0124f1effd327, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 3527936122190046950, guid: 403e7e8846e61ee43be0124f1effd327, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.4319
+      value: 2.4318998
       objectReference: {fileID: 0}
     - target: {fileID: 3527936122190046950, guid: 403e7e8846e61ee43be0124f1effd327, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.4319
+      value: 2.4319003
       objectReference: {fileID: 0}
     - target: {fileID: 3527936122190046950, guid: 403e7e8846e61ee43be0124f1effd327, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.4319
+      value: 2.4318998
       objectReference: {fileID: 0}
     - target: {fileID: 3527936122190046950, guid: 403e7e8846e61ee43be0124f1effd327, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.533366
+      value: 4.6208906
       objectReference: {fileID: 0}
     - target: {fileID: 3527936122190046950, guid: 403e7e8846e61ee43be0124f1effd327, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 70.48
+      value: -56.844643
       objectReference: {fileID: 0}
     - target: {fileID: 3527936122190046950, guid: 403e7e8846e61ee43be0124f1effd327, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -203.25
+      value: -142.04243
       objectReference: {fileID: 0}
     - target: {fileID: 3527936122190046950, guid: 403e7e8846e61ee43be0124f1effd327, type: 3}
       propertyPath: m_LocalRotation.w
@@ -60819,6 +63458,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 382461636120451628, guid: ee5b5de63257adf43ada95eb1d411bc6, type: 3}
   m_PrefabInstance: {fileID: 1964134824}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1964665934 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 2020421397}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1967920386
 PrefabInstance:
@@ -61811,6 +64455,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6815113509627669433, guid: 55649e2c765e6f04c81a0887915cfc5b, type: 3}
   m_PrefabInstance: {fileID: 1999104154}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2004252537
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -227.00049
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -56.994644
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -20.974827
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9827054
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.185176
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -21.343
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1 &2005892720
 GameObject:
   m_ObjectHideFlags: 0
@@ -62231,6 +64932,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6815113509627669433, guid: 55649e2c765e6f04c81a0887915cfc5b, type: 3}
   m_PrefabInstance: {fileID: 2018398439}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2020421397
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.158405
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -56.282646
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 317.102
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &2021516868
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63057,6 +65815,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 382461636120451628, guid: ee5b5de63257adf43ada95eb1d411bc6, type: 3}
   m_PrefabInstance: {fileID: 2044287943}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2045376505
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.357525
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -57.024643
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -178.47243
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9597019
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.2810202
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -32.642
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &2045382647
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63119,6 +65934,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6815113509627669433, guid: 55649e2c765e6f04c81a0887915cfc5b, type: 3}
   m_PrefabInstance: {fileID: 2045382647}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2049029192
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 67
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -26.189941
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -56.98465
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 77.32198
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &2051141179
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63423,6 +66295,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 9187606774498445359, guid: 495214619b8744f43907d6d899e059ae, type: 3}
   m_PrefabInstance: {fileID: 2062051402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2064621701 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+  m_PrefabInstance: {fileID: 285459214}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2065444284
 PrefabInstance:
@@ -64007,6 +66884,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5457183115582606539, guid: 5ffd1429058a9324f9fa3c4dcbe1cb66, type: 3}
   m_PrefabInstance: {fileID: 2076184661}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2077108983
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -245.14523
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -57.01465
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -176.47774
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1001 &2083187682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65703,6 +68637,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6815113509627669433, guid: 55649e2c765e6f04c81a0887915cfc5b, type: 3}
   m_PrefabInstance: {fileID: 2132086350}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2133404980
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1813759852}
+    m_Modifications:
+    - target: {fileID: 4759401851823650918, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_Name
+      value: Goblin Beacon Tower (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_RootOrder
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -199.47548
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -57.034645
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -125.05855
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9965796
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0826397
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 9.481
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280218122294960860, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30c5b0b9b47a9974b9c734f35011e38e, type: 3}
 --- !u!1 &2137107217
 GameObject:
   m_ObjectHideFlags: 0
@@ -66062,7 +69053,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 783.1, y: 0}
+  m_AnchoredPosition: {x: 97, y: -154}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2141626376
@@ -66347,7 +69338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7470681700545848414, guid: bea359e40fa664946a15edecd24f9a65, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7470681700545848414, guid: bea359e40fa664946a15edecd24f9a65, type: 3}
       propertyPath: m_LocalPosition.x
@@ -66400,7 +69391,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7947671676156273121, guid: db31d7ca231679f4ea54af2eb3cd4b6d, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7947671676156273121, guid: db31d7ca231679f4ea54af2eb3cd4b6d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -66461,7 +69452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6554706883189210933, guid: 51c88d37481f68741ae4c512c46f0e98, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6554706883189210933, guid: 51c88d37481f68741ae4c512c46f0e98, type: 3}
       propertyPath: m_LocalPosition.x
@@ -66639,7 +69630,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 865216698916179810, guid: 0a44a0a6bdf1e3340824e0b404d42e44, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 865216698916179810, guid: 0a44a0a6bdf1e3340824e0b404d42e44, type: 3}
       propertyPath: m_LocalPosition.x
@@ -67025,7 +70016,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2656154135893367989, guid: 7c783eaf0c6c3bc418e37c593c6a2990, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2656154135893367989, guid: 7c783eaf0c6c3bc418e37c593c6a2990, type: 3}
       propertyPath: m_LocalPosition.x

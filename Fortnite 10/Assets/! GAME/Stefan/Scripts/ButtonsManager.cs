@@ -16,12 +16,6 @@ public class ButtonsManager : MonoBehaviour
 
         switch (buttonIndex)
         {
-            case "Quit":
-                await Task.WhenAll(Fade(false));
-
-                Application.Quit();
-                break;
-
             case "Quit To Menu":
                 Time.timeScale = 1;
                 print("a");
@@ -30,6 +24,13 @@ public class ButtonsManager : MonoBehaviour
                 print("b");
                 SceneManager.LoadScene(0);
                 break;
+
+            case "Quit":
+                await Task.WhenAll(Fade(false));
+
+                Application.Quit();
+                break;
+
 
             case "Continue":
                 gameMenu.OnChangeMenuState(false);

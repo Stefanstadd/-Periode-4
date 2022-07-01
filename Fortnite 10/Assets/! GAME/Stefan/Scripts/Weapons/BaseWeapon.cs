@@ -15,6 +15,7 @@ public abstract class BaseWeapon : MonoBehaviour
     public Transform fpsCam;
     public InventoryManager inventoryManager;
     public Sprite weaponUIImage;
+    public Vector3 spriteScale;
     Animator animator;
 
     [Header("Upgrades")]

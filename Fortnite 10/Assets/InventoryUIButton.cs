@@ -22,6 +22,7 @@ public class InventoryUIButton : MonoBehaviour
 
     Color targetColor;
     public float colorSmoothTime = 5;
+    public Vector3 spriteScale;
     float smoothTimer;
     bool changed;
 
