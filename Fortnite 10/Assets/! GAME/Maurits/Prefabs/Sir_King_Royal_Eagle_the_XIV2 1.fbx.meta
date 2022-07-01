@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 58d50ec321e6feb43b48dbe2c8b8bea3
+guid: e984812c5c323334ab5378c97f558713
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable:
@@ -12,6 +12,9 @@ ModelImporter:
   - first:
       74: 1719813426551011273
     second: metarig|Shotgun
+  - first:
+      74: 2301724472578327676
+    second: metarig|Shotgun (1)
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -75,7 +78,7 @@ ModelImporter:
       takeName: metarig|Run
       internalID: 0
       firstFrame: 0
-      lastFrame: 30
+      lastFrame: 74
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -104,14 +107,14 @@ ModelImporter:
       takeName: metarig|Shotgun
       internalID: 0
       firstFrame: 0
-      lastFrame: 30
+      lastFrame: 1
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

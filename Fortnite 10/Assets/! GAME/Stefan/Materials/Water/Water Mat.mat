@@ -104,7 +104,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _Distance: 5.84
+    - _Distance: 4.14
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
@@ -116,7 +116,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Refraction_Strength: 3.46
+    - _Refraction_Strength: 1
     - _Refraction_speed: 0.08
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
@@ -128,9 +128,9 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Deep_Water_Color: {r: 0.009611949, g: 0.4103834, b: 0.4245283, a: 0.74509805}
+    - _Deep_Water_Color: {r: 0, g: 0.6666667, b: 0.6886792, a: 0.48235294}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Refraction_Scale: {r: 50, g: 50, b: 0, a: 0}
-    - _Shallow_Water_Color: {r: 0.13584894, g: 1, b: 0.82771635, a: 0.6156863}
+    - _Refraction_Scale: {r: 30, g: 30, b: 0, a: 0}
+    - _Shallow_Water_Color: {r: 0.13584897, g: 1, b: 0.82771635, a: 0.43137255}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []

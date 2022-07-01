@@ -70,6 +70,7 @@ public class PlayerInventory : MonoBehaviour
                 var weapon = w.GetComponent<BaseWeapon>();
                 if (weapon != null)
                 {
+                    weapon.OnSelectWeapon();
                     _selectedWeapon = weapon;
                 }
             }

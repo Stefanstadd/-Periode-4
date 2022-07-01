@@ -113,16 +113,12 @@ public class Camp : MonoBehaviour
             if (this.currentWave >= waves.Length)
             {
                 OnInvasionEnd();
-                await Task.Delay(Milliseconds(2));
+                return;
+            }
 
-                HelpPopup.AddPopup("You should visit a nearby upgrade station to improve your weapons");
-            }
-            else
-            {
-                // Continue to the next wave
-                print($"Finished Wave{ this.currentWave}, prepare for Wave{this.currentWave + 1}");
-                await Task.Delay(Milliseconds(waveDelay));
-            }
+            // Continue to the next wave
+            print($"Finished Wave{ this.currentWave}, prepare for Wave{this.currentWave + 1}");
+            await Task.Delay(Milliseconds(waveDelay));
         }
     }
 
