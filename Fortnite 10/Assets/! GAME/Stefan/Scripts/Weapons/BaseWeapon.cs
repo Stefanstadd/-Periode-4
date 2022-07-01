@@ -62,7 +62,7 @@ public abstract class BaseWeapon : MonoBehaviour
 
     private void Start()
     {
-        ammoLeft = 231;
+        ammoLeft = 831;
         animator = GetComponent<Animator>();
         playerMovement = transform.root.GetComponent<PlayerMovement>();
         currentMagSize = maxMagSize;

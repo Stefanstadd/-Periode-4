@@ -222,7 +222,7 @@ public class PlayerMovement : MonoBehaviour
          targetCam.transform.localEulerAngles = new Vector3(xRot, 0, 0);
 
          if (!inventory.NoWeaponSelected)
-          weaponHolder.GetChild(inventory.selectedWeapon - 1).transform.localEulerAngles = new Vector3(xRot + recoilRot, 0, 0);
+          weaponHolder.GetChild(inventory.selectedWeapon - 1).transform.localEulerAngles = new Vector3(xRot + recoilRot,0 , 0);
 
         transform.Rotate(new Vector3(0, rotation.y));
     }

@@ -17,6 +17,7 @@ public class HUDManager : MonoBehaviour
 
     [Header("Weapon Display")]
     public Animator weaponAnimator;
+    public Image gunUIImage;
 
     [Header("Inventory")]
     public Animator inventoryAnimator;
@@ -223,6 +224,9 @@ public class HUDManager : MonoBehaviour
         if (currentWeapon == null) return;
         fireRateImage.sprite = currentWeapon.autoFire ? autoFireSprite : singleFireSprite;
         fireRateImage.SetNativeSize();
+
+        gunUIImage.sprite = currentWeapon.weaponUIImage;
+        gunUIImage.SetNativeSize();
     }
 
 
