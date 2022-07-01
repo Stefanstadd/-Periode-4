@@ -36,6 +36,7 @@ public class HelpPopup : MonoBehaviour
 
     void Update()
     {
+        if (PlayerMovement.Dead) return;
         ManageMessages();
 
         ManageTimeline();
@@ -94,7 +95,7 @@ public class HelpPopup : MonoBehaviour
     [System.Serializable]
     public class TimeLineMessage
     {
-        public string message;
+        [TextArea(1,5)]public string message;
         public float time;
         public bool executed;
     }

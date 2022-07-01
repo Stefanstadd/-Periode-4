@@ -115,13 +115,20 @@ public class RaycastWeapon : BaseWeapon
                 {
                     info.enemy.TakeDamage(info.inflictedDamage);
 
-                    if(info.inflictedDamage >= info.enemy.data.maxHP * info.enemy.wave.multiplier.hp)
+                    if (OneShot(info))
                     {
                         Toasty.Toast();
                     }
+
+                    info.enemy.hit = true;
                 }
             }
         }
+    }
+
+    bool OneShot(DamageInfo info)
+    {
+        return !info.enemy.hit && info.inflictedDamage >= info.enemy.data.maxHP *info.enemy.wave.multiplier.hp;
     }
 
     public override async void Reload()

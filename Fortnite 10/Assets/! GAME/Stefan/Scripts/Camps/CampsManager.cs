@@ -13,10 +13,17 @@ public class CampsManager : MonoBehaviour
     public bool invasionActive;
 
     public int CampsToGo { get { return camps.Length - campsCompleted; } }
+    bool done;
     // Update is called once per frame
     void Update()
     {
         campsToGo.text = $"|    {camps.Length}";
         currentCamps.text = campsCompleted.ToString();
+
+        if(CampsToGo <= 0 && done == false)
+        {
+            done = true;
+            HelpPopup.AddPopup("You have murdered all the goblins, thank you for your hard work");
+        }
     }
 }

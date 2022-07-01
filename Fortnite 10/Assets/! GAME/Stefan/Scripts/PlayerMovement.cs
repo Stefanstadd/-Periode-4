@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -10,6 +11,15 @@ public class PlayerMovement : MonoBehaviour
     public Transform camHolder;
     public Transform cam, targetCam,setTargetCam, rotationCam, weaponHolder;
     public InventoryManager inventoryManager;
+
+    [Header("HP")]
+    public static float currentHP;
+    public float maxHP;
+
+    public Animator deathScreen;
+    public Slider healthSlider;
+
+    public static bool Dead { get; private set; }
 
     [Header("Movement")]
     public float walkSpeed;
@@ -114,14 +124,23 @@ public class PlayerMovement : MonoBehaviour
         inventory = GetComponent<PlayerInventory>();
         currentSpeed = walkSpeed;
         animator = GetComponent<Animator>();
+
+        currentHP = maxHP;
     }
 
     void Update()
     {
+        if (Dead)
+        {
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+            return;
+        }
         if (GameMenuManager.Paused) return;
 
         if(!inventoryManager.IsInInventory()) MouseAndRotation();
 
+        UpdateHealthBar();
         SetTargetCam();
         CamSettings();
         ManageAnimations();
@@ -174,6 +193,12 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat(speedName, BackwardsMovement? -1 : 1);
     }
+
+    void UpdateHealthBar()
+    {
+        healthSlider.maxValue = maxHP;
+        healthSlider.value = currentHP;
+    } 
 
     void SetTargetCam()
     {
@@ -249,6 +274,35 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         return false;
+    }
+
+    public void TakeDamage(float dmg)
+    {
+        print($"took {dmg} damage");
+        currentHP -= dmg;
+        if(currentHP <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        deathScreen.gameObject.SetActive(true);
+        deathScreen.SetTrigger("Die");
+        Dead = true;
+
+        rb.freezeRotation = false;
+
+        rb.AddForce(Vector3.up * Random.Range(1, 5), ForceMode.Impulse);
+        rb.AddExplosionForce(Random.Range(1, 5), Random.insideUnitSphere, 3);
+        rb.AddTorque(Random.insideUnitSphere, ForceMode.Impulse);
+
+        animator.SetInteger("MoveState", 0);
+        animator.SetBool("Aiming", false);
+
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
     }
 
     //void Movement()

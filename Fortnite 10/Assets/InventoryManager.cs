@@ -20,9 +20,17 @@ public class InventoryManager : MonoBehaviour
     }
     private void Update()
     {
+        if (PlayerMovement.Dead)
+        {
+            ToggleOff();
+            baseHud.SetActive(false);
+            return;
+        }
+
         CheckInventory();
 
         //zet de state van de main HUD
+        
         baseHud.SetActive(!IsInInventory());
     }
     public void Toggle(string inventoryID, bool value)
@@ -52,6 +60,9 @@ public class InventoryManager : MonoBehaviour
         {
             inventorys[i].Disable();
         }
+
+        if (PlayerMovement.Dead) return;
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }

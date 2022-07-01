@@ -34,6 +34,7 @@ public class UpgradeButton : MonoBehaviour
 
         SetText(tier, "Tier " + (nextUpgradeTier+1).ToString());
         SetText(weaponName, weapon.weaponName);
+
         SetText(cost, weapon.NextUpgradeCost());
         cost.color = CanAfford ? new Color(255, 255, 255, 255) : new Color(255, 0, 0, 255);
 
@@ -53,11 +54,6 @@ public class UpgradeButton : MonoBehaviour
         {
             imagesColorChange[i].color = new Color32(0, 255, 255, 255);
         }
-
-        for (int i = 0; i < textColorChange.Length; i++)
-        {
-            textColorChange[i].color = new Color32(0, 255, 255, 255);
-        }
     }
     public void OnUnhover()
     {
@@ -65,11 +61,6 @@ public class UpgradeButton : MonoBehaviour
         for (int i = 0; i < imagesColorChange.Length; i++)
         {
             imagesColorChange[i].color = new Color32(255,255,255,255);
-        }
-
-        for (int i = 0; i < textColorChange.Length; i++)
-        {
-            textColorChange[i].color = new Color32(255, 255, 255, 255);
         }
     }
 
@@ -80,10 +71,6 @@ public class UpgradeButton : MonoBehaviour
         {
             imagesColorChange[i].color = new Color32(0, 255, 0, 255);
         }
-        for (int i = 0; i < textColorChange.Length; i++)
-        {
-            textColorChange[i].color = new Color32(0, 255, 0, 255);
-        }
     }
 
     public void Deselect()
@@ -92,10 +79,6 @@ public class UpgradeButton : MonoBehaviour
         for (int i = 0; i < imagesColorChange.Length; i++)
         {
             imagesColorChange[i].color = new Color32(255, 255, 255, 255);
-        }
-        for (int i = 0; i < textColorChange.Length; i++)
-        {
-            textColorChange[i].color = new Color32(255, 255, 255, 255);
         }
     }
 

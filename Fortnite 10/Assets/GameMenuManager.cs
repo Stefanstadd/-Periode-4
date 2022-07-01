@@ -23,7 +23,8 @@ public class GameMenuManager : MonoBehaviour
     }
     public void UpdateMenu()
     {
-        if (inventory != null && inventory.IsInInventory()) return;
+        if (inventory != null && inventory.IsInInventory()|| PlayerMovement.Dead) return;
+
         if (Input.GetButtonDown("Escape"))
         {
             OnChangeMenuState(!InMenu);

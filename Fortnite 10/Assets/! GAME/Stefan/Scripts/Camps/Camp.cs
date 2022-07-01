@@ -36,11 +36,6 @@ public class Camp : MonoBehaviour
         {
             OnStartInvasion();
         }
-
-        if (active)
-        {
-            UpdateInvasionProgress();
-        }
     }
 
     async void OnStartInvasion()
@@ -124,11 +119,6 @@ public class Camp : MonoBehaviour
                 await Task.Delay(Milliseconds(waveDelay));
             }
         }
-    }
-
-    void UpdateInvasionProgress()
-    {
-
     }
 
     void OnInvasionEnd()

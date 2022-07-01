@@ -23,6 +23,7 @@ public class BaseEnemy : MonoBehaviour
     public Color threadColor,attackColor;
     public GameObject spawnedEnemy;
     public GameObject bytes;
+    public bool hit;
 
     Transform target;
     NavMeshAgent agent;
@@ -73,17 +74,20 @@ public class BaseEnemy : MonoBehaviour
 
     void UpdateEnemy()
     {
+        print(state);
         if (spawnedEnemy == null) return;
 
         SetEnemyState();
+        print(canSeePlayer);
         if (canSeePlayer)
         {
             if (state == EnemyState.Threatening)
             {
                 SetTarget(target.position);
             }
-            if(state == EnemyState.Attacking && !attacking)
+            if(state == EnemyState.Attacking && attacking == false)
             {
+                print("Attack");
                 Attack();
             }
         }
@@ -114,6 +118,8 @@ public class BaseEnemy : MonoBehaviour
         {
             animator.SetTrigger("Attacking");
         }
+
+        PlayerMovement.player.TakeDamage(data.damage * wave.multiplier.damage);
 
         await Task.Delay((int)(data.attackSpeed * 1000));
         attacking = false;

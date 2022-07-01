@@ -38,6 +38,7 @@ public class PlayerInventory : MonoBehaviour
 
     void Update()
     {
+        if (PlayerMovement.Dead) return;
         //UpdateBytes();
 
         if (currentWeapon != null && currentWeapon.reloading) return;
@@ -152,7 +153,8 @@ public class PlayerInventory : MonoBehaviour
         display.OnHeal(timeBetweenHealing);
         healTimer = timeBetweenHealing;
 
-        Vector3 pos = transform.position - Vector3.up * 0.49f;
+        Vector3 pos = transform.position;
+
         var a = Instantiate(VFX_Healing, pos, Quaternion.identity).transform;
         a.transform.localEulerAngles = new Vector3(-90, 0, 0);
         Destroy(a.gameObject,8f);

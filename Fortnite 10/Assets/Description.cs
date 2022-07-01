@@ -39,6 +39,12 @@ public class Description : MonoBehaviour
     }
     private void Update()
     {
+        if (PlayerMovement.Dead) 
+        { 
+            Disable();
+            return;
+        }
+
         SetSize();
         SetPos();
         if (!active) return;

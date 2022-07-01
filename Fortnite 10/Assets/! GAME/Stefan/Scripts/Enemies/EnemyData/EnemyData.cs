@@ -12,10 +12,13 @@ public class EnemyData : ScriptableObject
     public float maxHP;
     public float resistance;
     public float detectRadius, attackRadius;
+    public float sizeMultiplier;
 
     public float movementSpeed;
     public float rotationSpeed;
     public float attackSpeed;
+
+    public float damage;
 
     public Vector2 wanderTime;
 

@@ -79,7 +79,8 @@ public abstract class BaseWeapon : MonoBehaviour
 
     protected virtual void Update()
     {
-        if (inventoryManager.IsInInventory() || GameMenuManager.Paused) return;
+
+        if (inventoryManager.IsInInventory() || GameMenuManager.Paused || PlayerMovement.Dead) return;
         CheckInput();
 
         //Raycasting
